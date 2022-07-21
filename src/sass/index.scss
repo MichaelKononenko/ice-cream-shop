@@ -1,6 +1,12 @@
+//utils
+@import './vars';
 @import './common';
+@import './base';
+@import './reset';
+//sections
 @import './header';
 @import './hero';
+@import './products';
 @import './about';
 @import './advantages';
 @import './gallery';
@@ -8,3 +14,4 @@
 @import './contacts';
 @import './footer';
 @import './example';
+@import './team-lead-test';
