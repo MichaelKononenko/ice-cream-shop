@@ -1,17 +1,17 @@
 //utils
-@import './vars';
-@import './common';
-@import './base';
-@import './reset';
+@import './utils/vars';
+@import './utils/common';
+@import './utils/base';
+@import './utils/reset';
 //sections
-@import './header';
-@import './hero';
-@import './products';
-@import './about';
-@import './advantages';
-@import './gallery';
-@import './customer-reviews';
-@import './contacts';
-@import './footer';
-@import './example';
-@import './team-lead-test';
+@import './base/header';
+@import './base/hero';
+@import './base/products';
+@import './base/about';
+@import './base/advantages';
+@import './base/gallery';
+@import './base/customer-reviews';
+@import './base/contacts';
+@import './base/footer';
+@import './base/example';
+@import './base/team-lead-test';
