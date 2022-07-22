@@ -4,22 +4,51 @@
 
   &__list {
     padding-top: 86px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+      padding-top: 126px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 121px;
+    }
   }
   &__item {
     position: relative;
+    flex-shrink: 1;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 180px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 268px;
+    }
   }
   &__item {
     &:not(:last-child) {
-      margin-bottom: 98px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 98px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 4px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 132px;
+      }
     }
   }
   &__item::before {
     position: absolute;
     display: inline-block;
     height: 50px;
-    top: -59px;
+    top: -66px;
     left: 0;
     content: '';
+    @media screen and (min-width: 768px) {
+      top: -86px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: -90px;
+    }
   }
   &__item:nth-child(1)::before {
     width: 33px;
@@ -35,9 +64,6 @@
   }
 
   &__number {
-    margin-top: px;
-    padding: 9px 0 20px;
-
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 36px;
@@ -45,6 +71,14 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 1.1458;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: 1.1379;
+    }
   }
   &__description {
     margin-top: 25px;
@@ -54,5 +88,14 @@
     font-size: 12px;
     line-height: 1.7;
     color: var(--accent-text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+    }
   }
 }
