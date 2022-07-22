@@ -81,6 +81,16 @@
     background-color: #ffa5ba;
     padding: 0;
     top: 83px;
+
+    @media screen and (min-width: 521px) {
+      left: 200px;
+    }
+    @media screen and (max-width: 420px) and (min-width: 321px) {
+      left: 120px;
+    }
+    @media screen and (max-width: 520px) and (min-width: 421px) {
+      left: 160px;
+    }
     left: 36px;
   }
 
