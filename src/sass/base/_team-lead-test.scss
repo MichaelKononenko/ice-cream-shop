@@ -1,3 +1,6 @@
 .test__container {
   outline: 1px solid pink;
 }
+.test__title {
+  @include font(null, 15px, 25px, 0.03em, center, purple);
+}
