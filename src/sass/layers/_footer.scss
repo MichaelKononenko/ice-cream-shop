@@ -1,0 +1,119 @@
+.footer {
+  height: 409px;
+  background-color: rgba(255, 245, 246, 1);
+  padding-top: 40px;
+  padding-bottom: 3px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 320px;
+}
+
+.footer-base {
+  display: block;
+  max-width: 232px;
+  margin-bottom: 40px;
+}
+
+.footer-contacts {
+  display: block;
+  max-width: 236px;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.footer-base_titte {
+  margin-bottom: 16px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: rgba(255, 165, 186, 1);
+}
+
+.footer-base_text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(212, 20, 67, 1);
+}
+
+.footer-contacts_list {
+  display: flex;
+  margin: 0;
+  justify-content: right;
+}
+
+.footer-contacts_item {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-contacts_item:not(:first-child) {
+  margin-left: 28px;
+}
+
+.footer-contacts_soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 165, 186, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: rgba(212, 20, 67, 1);
+  }
+}
+
+.footer-contacts_tel {
+  display: block;
+  text-align: right;
+  margin-top: 40px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.83;
+}
+
+.color {
+  color: rgba(212, 20, 67, 1);
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(144, 126, 130, 1);
+}
+
+.line {
+  size: 1px;
+  background-color: solid rgba(225, 225, 225, 1);
+  margin: 0;
+}
