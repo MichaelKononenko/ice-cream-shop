@@ -18,13 +18,13 @@
 
 .footer-base {
   display: block;
-  width: 234px;
+  max-width: 232px;
   margin-bottom: 40px;
 }
 
 .footer-contacts {
   display: block;
-  width: 230px;
+  max-width: 236px;
   margin-left: auto;
   margin-bottom: 40px;
 }
@@ -85,15 +85,16 @@
 
 .footer-contacts_tel {
   display: block;
+  text-align: right;
   margin-top: 40px;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.83;
 }
 
-.tel {
+.color {
   color: rgba(212, 20, 67, 1);
 }
 
