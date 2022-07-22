@@ -1,18 +1,16 @@
-
 .hero {
   position: relative;
   background-color: #ffb8ca;
   height: 502px;
   overflow: hidden;
-  &-content {
+  &--center {
     position: relative;
     z-index: 1;
 
     margin-top: 194px;
-    // margin-top: 136xp;
   }
 
-  &-title {
+  &--title {
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -27,29 +25,27 @@
     margin-bottom: 20px;
   }
 
-  &-list__btn {
+  &__list {
     display: flex;
   }
 
-  &-item__btn:nth-child(2) {
+  &__item:nth-child(2) {
     margin-left: 8px;
   }
 
-  &-title__passion {
+  &__title--label {
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 0.95;
-    /* or 46px */
 
     text-transform: uppercase;
 
     color: #d41443;
   }
 
-  &-btn__products {
-    background: #d41443;
+  &__btn {
     border-radius: 20px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -59,31 +55,24 @@
     display: flex;
     align-items: center;
     text-align: center;
+  }
 
+  &__btn--made {
+    color: #d41443;
+
+    background: #ffffff;
+    padding: 8px 14px;
+    border: none;
+  }
+
+  &__btn--product {
+    background: #d41443;
     color: #ffffff;
     border: none;
     padding: 8px 14px;
   }
 
-  &-btn__made {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #d41443;
-
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 8px 14px;
-    border: none;
-  }
-
-  &-fon {
+  &--circle {
     position: absolute;
     width: 346px;
     height: 344px;
@@ -92,10 +81,10 @@
     background-color: #ffa5ba;
     padding: 0;
     top: 83px;
-    left: 10vw;
+    left: 36px;
   }
 
-  &-img__slider {
+  &__img {
     position: absolute;
     top: 9px;
     left: 81px;

@@ -1,53 +1,33 @@
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1 class="hero-title">
-        ice cream made with <span class="hero-title__passion">passion</span>
+<section class="hero container">
+    <div class="hero--center">
+      <h1 class="hero--title">
+        ice cream made with <span class="hero__title--label">passion</span>
       </h1>
-      <ul class="hero-list__btn">
-        <li class="hero-item__btn">
-          <button class="hero-btn__products" type="button">Products</button>
+      <ul class="hero__list">
+        <li class="hero__item">
+          <button class="hero__btn hero__btn--product" type="button">Products</button>
         </li>
-        <li class="hero-item__btn">
-          <button class="hero-btn__made" type="button">How it’s made?</button>
+        <li class="hero__item">
+          <button class="hero__btn hero__btn--made" type="button">How it’s made?</button>
         </li>
       </ul>
     </div>
-    <div class="hero-fon">
-      <!-- <picture>
-        <source
-          srcset="
-            ./images/images-hero/slider-pic71-mob-min.png    1x,
-            ./images/images-hero/slider-pic71-mob@2x-min.png 2x,
-            ./images/images-hero/slider-pic71-mob@3x-min.png 3x
-          "
-          media="(max-width: 171px)"
-        />
-
-        <img
-          class="hero-img__slider"
-          src="./images/images-hero/slider-pic71-mob-min.png"
-          alt="ice cream with six taste"
-          width="171"
-        />
-      </picture> -->
+    <div class="hero--circle">
       <picture>
         <source
           media="(max-width:767px)"
           srcset="
             ./images/images-hero/slider-pic71-mob-min.png    1x,
-            ./images/images-hero/slider-pic71-mob@2x-min.png 2x,
-            ./images/images-hero/slider-pic71-mob@3x-min.png 3x
+            ./images/images-hero/slider-pic71-mob@2x-min.png 2x
           "
           type="image/png"
         />
         <img
           src="./images/images-hero/slider-pic71-mob-min.png"
-          alt="Photo gallery of goodies"
+          alt="Photo of ice cream with six flavors"
           width="171"
-          class="hero-img__slider"
+          class="hero__img"
         />
       </picture>
     </div>
-  </div>
 </section>
