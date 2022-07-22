@@ -1,18 +1,18 @@
 //utils
 @import './utils/vars';
 @import './utils/common';
-@import './utils/base';
 @import './utils/reset';
 @import './utils/mixins';
+@import './utils/base';
 //sections
-@import './base/header';
-@import './base/hero';
-@import './base/products';
-@import './base/about';
-@import './base/advantages';
-@import './base/gallery';
-@import './base/customer-reviews';
-@import './base/contacts';
-@import './base/footer';
-@import './base/example';
-@import './base/team-lead-test';
+@import './layers/header';
+@import './layers/hero';
+@import './layers/products';
+@import './layers/about';
+@import './layers/advantages';
+@import './layers/gallery';
+@import './layers/customer-reviews';
+@import './layers/contacts';
+@import './layers/footer';
+@import './layers/example';
+@import './layers/team-lead-test';
