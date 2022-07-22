@@ -1,0 +1,121 @@
+// .container-reviews {
+//   outline: 2px solid tomato;
+// }
+
+.customer-reviews {
+  padding-top: 60px;
+  &__list {
+    margin-bottom: 16px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &__userpic {
+    margin: 0 auto 32px auto;
+  }
+  &__wrap {
+    position: relative;
+    background-color: #fafafa;
+    margin-bottom: 16px;
+    padding: 43px 50px 26px 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+      top: 30px;
+      left: 53px;
+      background-image: url(../images/customer-reviews/“.png);
+      background-size: contain;
+    }
+  }
+  &__text {
+    position: relative;
+    padding-right: 8px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+    color: #000000;
+    background: repeating-linear-gradient(
+      to top,
+      transparent,
+      #e1e1e1 2px,
+      transparent 1px,
+      transparent 31px
+    );
+  }
+  &__part {
+    position: relative;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #c7133e;
+    border-radius: 4px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: -2px;
+      left: -14px;
+      border: 2px solid #c7133e;
+      border-radius: 4px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: -2px;
+      left: 10px;
+      border: 2px solid #c7133e;
+      border-radius: 4px;
+    }
+  }
+  &__user {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.pagination {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+  &__btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #d9d9d9;
+    border-style: none;
+    &:hover,
+    &:focus {
+      background-color: #d31342;
+    }
+  }
+  &__btn-current {
+    display: none;
+  }
+  &__icon {
+    cursor: pointer;
+    fill: #d31342;
+    &:hover,
+    &:focus {
+      fill: #d41342;
+    }
+  }
+}
