@@ -1,0 +1,12 @@
+
+.gallery {
+    @media screen and (max-width: 767px) {
+	padding-top: 60px;
+    
+    background-image: linear-gradient(180deg, var(--secondary-bg-color) 44%, var(--primare-bg-color)  0);
+	}
+    
+}
+.gallery__img {
+   margin: 0 auto; 
+}
