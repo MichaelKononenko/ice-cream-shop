@@ -24,7 +24,8 @@ ul {
   @include font(
     null,
     18px,
-    calc(21px / 18px),
+    21px,
+    18px,
     0.04em,
     center,
     var(--secondary-accent-color)
@@ -36,14 +37,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 148px;
   margin-top: 0;
-  @include font(
-    null,
-    34px,
-    calc(39px / 34px),
-    0.04em,
-    center,
-    var(--accent-color)
-  );
+  @include font(null, 34px, 39px, 0.04em, center, var(--accent-color));
 }
 
 .products__list {
@@ -97,14 +91,7 @@ ul {
   text-transform: uppercase;
   padding-top: 160px;
   margin: 0 auto;
-  @include font(
-    null,
-    20px,
-    calc(23px / 20px),
-    0.04em,
-    center,
-    var(--primare-bg-color)
-  );
+  @include font(null, 20px, 23px, 0.04em, center, var(--primare-bg-color));
 }
 
 .products__box {
@@ -131,14 +118,7 @@ ul {
   align-content: flex-end;
   margin-top: 32px;
   margin-bottom: 32px;
-  @include font(
-    700,
-    14px,
-    calc(21px / 14px),
-    0.04em,
-    center,
-    var(--primare-bg-color)
-  );
+  @include font(700, 14px, 21px, 0.04em, center, var(--primare-bg-color));
 }
 
 .products__holder {
