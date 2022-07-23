@@ -1,7 +1,12 @@
-@mixin centeredFlex() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// @mixin centeredFlex() {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+@mixin centeredFlex($d, $ai, $jc) {
+  display: $d;
+  align-items: $ai;
+  justify-content: $jc;
 }
 @mixin font($fw, $fs, $lh, $ls, $ta, $c) {
   font-weight: $fw;
