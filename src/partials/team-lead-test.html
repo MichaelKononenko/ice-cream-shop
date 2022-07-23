@@ -1,5 +1,8 @@
 <section class="test">
   <div class="container test__container">
+    <button class="test__button test-modal-open-button" type="button">
+      Buy now
+    </button>
     <h2 class="test__title">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, dicta.
     </h2>
@@ -37,3 +40,18 @@
     </ul>
   </div>
 </section>
+<div class="test__backdrop is-hidden">
+  <div class="test__modal">
+    <h1 class="test__modal-title">Lorem, ipsum dolor.</h1>
+    <p class="test__modal-description">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
+      accusamus sunt!
+    </p>
+  </div>
+  <a
+    href="#"
+    class="overlay test__backdrop--close test__link is-hidden"
+    onclick="return false;"
+  >
+  </a>
+</div>

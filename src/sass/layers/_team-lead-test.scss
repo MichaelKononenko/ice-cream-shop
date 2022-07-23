@@ -1,6 +1,44 @@
 .test__container {
+  padding-top: 50px;
   outline: 1px solid pink;
 }
 .test__title {
   @include font(null, 15px, 25px, 0.03em, center, purple);
+}
+.test__button {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  background-color: var(--secondary-accent-color);
+  color: var(--primary-text-color);
+}
+.test__backdrop {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(90deg, gold, pink);
+}
+.overlay {
+  position: absolute;
+  background: var(--primary-text-color);
+  width: 100vw;
+  height: 100vh;
+}
+.test__modal {
+  position: absolute;
+  border-radius: 10%;
+  padding: 30px;
+  z-index: 1;
+  width: 80%;
+  background-color: pink;
+  background-image: linear-gradient(
+    135deg,
+    var(--secondary-accent-color),
+    var(--accent-color)
+  );
 }
