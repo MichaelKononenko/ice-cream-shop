@@ -4,95 +4,129 @@
 
 .customer-reviews {
   padding-top: 60px;
-}
-
-.review-slider__userpic {
-  margin: 0 auto 32px auto;
-}
-
-.review-slider__wrap {
-  position: relative;
-  background-color: #fafafa;
-  margin-bottom: 16px;
-  padding: 43px 50px 26px 50px;
-  &::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 54px;
-    height: 40px;
-    top: 30px;
-    left: 53px;
-    background-image: url(../images/customer-reviews/“.png);
-    background-size: contain;
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 120px;
   }
 }
 
-.review-slider__text {
-  margin: 0;
-  position: relative;
-  padding-right: 8px;
-  padding-left: 15px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.58;
-  text-align: center;
-  color: #000000;
-  background: repeating-linear-gradient(
-    to top,
-    transparent,
-    #e1e1e1 2px,
-    transparent 1px,
-    transparent 31px
-  );
-}
-
-.review-slider__part {
-  position: relative;
-  margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 4px;
-  height: 4px;
-  border: 2px solid #c7133e;
-  border-radius: 4px;
-  &::before {
-    content: '';
-    position: absolute;
+.review-slider {
+  &__userpic {
+    margin: 0 auto 32px auto;
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 16px;
+    }
+  }
+  &__wrap {
+    position: relative;
+    background-color: #fafafa;
+    margin-bottom: 16px;
+    padding: 43px 50px 26px 50px;
+    @media screen and (min-width: $tablet-width) {
+      width: 620px;
+      margin: 0 auto 4px auto;
+      padding: 37px 6px 44px 6px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 968px;
+      margin-bottom: 16px;
+      padding: 47px 74px 39px 73px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+      top: 30px;
+      left: 53px;
+      background-image: url(../images/customer-reviews/“.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (min-width: $tablet-width) {
+        width: 60px;
+        top: 20px;
+        left: 6px;
+      }
+      @media screen and (min-width: $desktop-width) {
+        width: 54px;
+        top: 32px;
+        left: 72px;
+      }
+    }
+  }
+  &__text {
+    position: relative;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 8px;
+    @include font(500, 12px, 31px, null, center, var(--accent-text-color));
+    background: repeating-linear-gradient(
+      to top,
+      transparent,
+      #e1e1e1 2px,
+      transparent 1px,
+      transparent 31px
+    );
+    @media screen and (min-width: $tablet-width) {
+      padding-left: 45px;
+      padding-right: 49px;
+      font-size: 14px;
+      line-height: 2.16;
+      letter-spacing: 00.04em;
+    }
+    @media screen and (min-width: $desktop-width) {
+      padding-left: 36px;
+      padding-right: 35px;
+      font-size: 16px;
+      line-height: 1.86;
+    }
+  }
+  &__part {
+    position: relative;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
     width: 4px;
     height: 4px;
-    top: -2px;
-    left: -14px;
     border: 2px solid #c7133e;
     border-radius: 4px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: -2px;
+      left: -14px;
+      border: 2px solid #c7133e;
+      border-radius: 4px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: -2px;
+      left: 10px;
+      border: 2px solid #c7133e;
+      border-radius: 4px;
+    }
   }
-  &::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    top: -2px;
-    left: 10px;
-    border: 2px solid #c7133e;
-    border-radius: 4px;
+  &__user {
+    @include font(500, 14px, 26px, null, center, var(--accent-text-color));
+    @media screen and (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 20px;
+    }
   }
-}
-
-.review-slider__user {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.86;
-  text-align: center;
-  color: #000000;
-}
-
-.review-slider .swiper-pagination {
-  bottom: 0;
-  display: inline-block;
 }
 
 .review-slider .swiper-pagination-bullet {
-  margin: 0 18px;
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
