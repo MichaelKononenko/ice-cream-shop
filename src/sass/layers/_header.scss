@@ -6,15 +6,15 @@
 .header__logo {
   position: relative;
   padding-top: 8px;
-  background-color: #FFB8CA;
+  background-color: #ffb8ca;
   @media screen and (min-width: $tablet-width) {
     padding-top: 32px;
-      display: flex;
-      min-width: 78%;
-    }
-    @media screen and (min-width: $desktop-width) {
+    display: flex;
+    min-width: 78%;
+  }
+  @media screen and (min-width: $desktop-width) {
     padding-top: 37px;
-    }
+  }
 }
 
 .header__wrap {
@@ -40,13 +40,11 @@
     padding: 30px 20px 10px 20px;
     border: 0;
     background-color: #ffb8ca;
-    }
-    @media screen and (min-width: $desktop-width) {
-      display: none;
-    }
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: none;
+  }
 }
-
-
 
 .mob-menu {
   position: fixed;
@@ -80,14 +78,14 @@
   height: 100%;
 }
 
-.container {
+.header .container {
   position: relative;
   width: 100%;
   @media screen and (min-width: $tablet-width) {
-   // max-width: 100%;
-      display: flex;
-      align-items: center;
-    }
+    // max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .mob-menu .container {
@@ -151,7 +149,7 @@
 
 .mob-menu-btn:hover,
 .mob-menu-btn:focus {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -160,14 +158,13 @@
 }
 
 .mob-menu-btn__tablet {
-@media screen and (min-width: $mobile-width) {
-   display: none;  
+  @media screen and (min-width: $mobile-width) {
+    display: none;
   }
 }
 
-
 .mob-menu-btn__tablet {
-@media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     //margin-left: auto;
     position: absolute;
     font-weight: 700;
@@ -188,23 +185,23 @@
     background-color: var(--primare-bg-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-    @media screen and (min-width: $desktop-width) {
-      top: 40px;
-      right: 16px;
-    }
- }
+  @media screen and (min-width: $desktop-width) {
+    top: 40px;
+    right: 16px;
+  }
+}
 
- .mob-menu-btn__tablet:hover,
- .mob-menu-btn__tablet:focus {
-   background-color: #ECEBEB;
+.mob-menu-btn__tablet:hover,
+.mob-menu-btn__tablet:focus {
+  background-color: #ecebeb;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+}
 
 .header__wrap {
-@media screen and (min-width: $desktop-width) {
-  display: flex;
-  margin: 0 auto;
-}
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 .header__list {
@@ -222,12 +219,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: #FFFFFF;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+  color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- .header__link:hover,
- .header__link:focus {
-   color: #d41443;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+.header__link:hover,
+.header__link:focus {
+  color: #d41443;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
