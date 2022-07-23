@@ -1,68 +1,79 @@
 .about {
   padding-top: 60px;
   background-color: var(--secondary-bg-color);
-}
 
-.about__pretitle {
-  font-family: 'Titan One', sans-serif;
-  @include font(400, 18px, 21px, 0.04em, center, var(--secondary-accent-color));
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.about__title {
-  font-family: 'Titan One', sans-serif;
-  @include font(400, 34px, 39px, 0.04em, center, var(--accent-color));
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.about__background {
-  width: 100%;
-  height: calc(100vw - 40px);
-  margin-bottom: 40px;
-
-  background-image: url(../images/about/about-img-mob.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/about/about-img-mob@2x.png);
+  &__pretitle {
+    font-family: 'Titan One', sans-serif;
+    @include font(
+      400,
+      18px,
+      21px,
+      0.04em,
+      center,
+      var(--secondary-accent-color)
+    );
+    text-transform: uppercase;
+    margin-bottom: 15px;
   }
 
-  @media screen and (min-width: 320px) {
-    height: 279px;
+  &__title {
+    font-family: 'Titan One', sans-serif;
+    @include font(400, 34px, 39px, 0.04em, center, var(--accent-color));
+    text-transform: uppercase;
+    margin-bottom: 32px;
   }
-}
 
-.about__text-wrap {
-  @include font(500, 12px, 19px, null, null, null);
+  &__background {
+    width: 100%;
+    height: calc(100vw - 40px);
+    margin-bottom: 40px;
 
-  background-image: url(../images/about/about-bg-mob.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 71px;
+    background-image: url(../images/about/about-img-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/about/about-bg-mob@2x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-img-mob@2x.png);
+    }
+
+    @media screen and (min-width: 320px) {
+      height: 279px;
+    }
   }
-}
-.about__main-text {
-  margin-bottom: 32px;
-  max-width: 220px;
-  color: var(--accent-text-color);
-}
-.about__additional-text {
-  margin-bottom: 20px;
-  max-width: 220px;
-  color: var(--primary-text-color);
+
+  &__text-wrap {
+    @include font(500, 12px, 19px, null, null, null);
+
+    background-image: url(../images/about/about-bg-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 71px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bg-mob@2x.png);
+    }
+  }
+
+  &__main-text {
+    margin-bottom: 32px;
+    max-width: 220px;
+    color: var(--accent-text-color);
+  }
+
+  &__additional-text {
+    margin-bottom: 20px;
+    max-width: 220px;
+    color: var(--primary-text-color);
+  }
 }
 
 .about__button {
+  display: flex;
+  align-items: center;
   height: 44px;
   padding-left: 37px;
   padding-right: 37px;
@@ -71,11 +82,17 @@
   background-color: var(--primare-bg-color);
   border-radius: 22px;
   border: none;
+  transition: background-color var(--time-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .button__icon {
-  width: 7px;
-  height: 10px;
+  width: 8px;
+  height: 11px;
   margin-left: 14px;
   fill: var(--accent-color);
 }
