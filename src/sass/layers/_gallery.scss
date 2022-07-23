@@ -12,6 +12,7 @@
 
 .gallery__list {
   display: flex;
+ justify-content: center;
   align-items: center;
   gap: 2.53px;
 }
@@ -24,10 +25,15 @@
   &:hover {
     transform: scale(1.5);
   }
+  
 }
 .gallery__image {
   border-radius: 8px;
   border: transparent;
+  // transition: scale 1s ease;
+  // &:hover {
+  //   transform: scale(1.5);
+  // }
 }
 
 .gallery__wrap-5 {
