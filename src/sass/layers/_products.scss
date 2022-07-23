@@ -52,7 +52,7 @@
 .products__item:last-child {
   background-color: var(--third-bg-color);
 }
-.products__slogan::before {
+.products__slogan::after {
   content: '';
   background-image: url(../images/products/products-ice-cream-mob-min.png);
   background-repeat: no-repeat;
@@ -62,22 +62,22 @@
   height: 280px;
   position: absolute;
 }
-.products__title::before {
+.products__title::after {
   content: '';
   background-image: url(../images/products/products-ice-coffee-mob-min.png);
   background-repeat: no-repeat;
-  top: 635px;
+  top: 678px;
   left: 0;
   width: 100%;
   height: 280px;
   position: absolute;
 }
-.products__list::before {
+.products__list::after {
   content: '';
   background-image: url(../images/products/products-milkshakes-mob-min.png);
   background-repeat: no-repeat;
-  top: 1323px;
-  left: 20px;
+  top: 1907px;
+  left: 28px;
   width: 280px;
   height: 280px;
   position: absolute;
@@ -124,8 +124,10 @@
   align-content: flex-end;
   margin-top: 32px;
   margin-bottom: 32px;
+  padding-left: 41px;
+  padding-right: 39px;
   font-family: 'DM Sans';
-  @include font(700, 14px, 21px, 0.04em, null, var(--primare-bg-color));
+  @include font(700, 14px, 21px, 0.04em, center, var(--primare-bg-color));
 }
 
 .products__holder {
