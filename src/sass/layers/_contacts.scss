@@ -5,20 +5,61 @@
     var(--primare-bg-color) 0 25%,
     #fff5f6 25% 100%
   );
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 80px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primare-bg-color) 0 51%,
+      #fff5f6 51% 100%
+    );
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 120px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primare-bg-color) 0 28%,
+      #fff5f6 28% 100%
+    );
+  }
+}
+
+.contacts > .container {
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 16px;
+  }
 }
 
 .contacts__list {
   margin-bottom: 32px;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
 }
 .contacts-card {
   background-color: var(--primare-bg-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 40px;
+  }
 }
 
 .contacts-card:not(:last-child) {
   margin-bottom: 20px;
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-card__representation {
@@ -36,6 +77,18 @@
 
   margin-bottom: 20px;
   padding: 0 25px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    height: 22px;
+    padding: 0 16px;
+    margin-bottom: 32px;
+    border-radius: 6px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    height: 28px;
+  }
 }
 
 .contacts-card__representation.contacts-card__representation--green {
@@ -45,29 +98,61 @@
 .contacts-card__location {
   padding-bottom: 24px;
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
 }
 
 .contacts-card__town {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
-  letter-spacing: 0.04em;
   margin-bottom: 8px;
 
   color: var(--accent-text-color);
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
 }
+
 .contacts-card__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 .contacts-card__work-time {
   padding: 24px 0;
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 32px 0;
+  }
 }
 .contacts-card__weekdays {
   margin-bottom: 8px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .contacts-card__day {
@@ -75,17 +160,38 @@
   font-size: 12px;
   line-height: 1.86;
   color: var(--accent-text-color);
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 16px;
+  }
 }
+
 .contacts-card__time {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
   color: var(--secondary-accent-color);
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 16px;
+  }
 }
 
 .contacts-card__address {
   padding-top: 24px;
   font-style: normal;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 32px;
+  }
 }
 
 .contacts-card__link {
@@ -100,6 +206,15 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 16px;
   }
 }
 
@@ -130,6 +245,14 @@
   &:focus {
     background-color: var(--secondary-accent-color);
   }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 192px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 198px;
+  }
 }
 
 .contacts__button.contacts__button--white {
@@ -143,10 +266,27 @@
   &:focus {
     background-color: #ecebeb;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
 
 .contacts__button:not(:last-child) {
   margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 12px;
+  }
 }
 
 .contacts__icon {
