@@ -1,10 +1,24 @@
-.header-mob {
+.header {
   width: 100%;
   background-color: #ffb8ca;
 }
 
-.header-mob__logo {
+.header__logo {
+  position: relative;
   padding-top: 8px;
+  background-color: #FFB8CA;
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 32px;
+      display: flex;
+      min-width: 78%;
+    }
+    @media screen and (min-width: $desktop-width) {
+    padding-top: 37px;
+    }
+}
+
+.header__wrap {
+  display: none;
 }
 
 .menu-open-btn {
@@ -16,18 +30,36 @@
   padding: 20px;
   border: 0;
   background-color: #ffb8ca;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    //margin-left: 273px;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    padding: 30px 20px 10px 20px;
+    border: 0;
+    background-color: #ffb8ca;
+    }
+    @media screen and (min-width: $desktop-width) {
+      display: none;
+    }
 }
+
+
 
 .mob-menu {
   position: fixed;
-  //background-color: var(--header-color);
   z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-left: 70px;
-  overflow: auto;
+  //padding-left: 70px;
+  overflow-y: auto;
+  @media screen and (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .menu-close-btn {
@@ -40,6 +72,7 @@
   height: 14px;
   border: 0;
   background-color: #e17992;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close-btn__icon-svg {
@@ -48,16 +81,24 @@
 }
 
 .container {
-  max-width: 100%;
+  position: relative;
+  width: 100%;
+  @media screen and (min-width: $tablet-width) {
+   // max-width: 100%;
+      display: flex;
+      align-items: center;
+    }
 }
 
 .mob-menu .container {
   display: flex;
   flex-direction: column;
   position: relative;
-
   height: 100%;
   background-color: #e17992;
+  @media screen and (min-width: $tablet-width) {
+    max-width: 320px;
+  }
 }
 
 .mob-menu__item:not(:last-child) {
@@ -91,24 +132,102 @@
 
 .mob-menu-btn {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
+  font-size: 14px;
+  line-height: 1.29;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #d41443;
   cursor: pointer;
   border: none;
-  // margin-top: 60px;
-  //margin-bottom: 32px;
   margin: 60px auto 32px auto;
   padding: 0;
   width: 209px;
   height: 44px;
   border-radius: 22px;
   background-color: var(--primare-bg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-btn:hover,
+.mob-menu-btn:focus {
+  background-color: #ECEBEB;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-btn__icon {
   margin-left: 15px;
 }
+
+.mob-menu-btn__tablet {
+@media screen and (min-width: $mobile-width) {
+   display: none;  
+  }
+}
+
+
+.mob-menu-btn__tablet {
+@media screen and (min-width: $tablet-width) {
+    //margin-left: auto;
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d41443;
+    cursor: pointer;
+    border: none;
+    top: 32px;
+    right: 32px;
+    padding: 0;
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: var(--primare-bg-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+    @media screen and (min-width: $desktop-width) {
+      top: 40px;
+      right: 16px;
+    }
+ }
+
+ .mob-menu-btn__tablet:hover,
+ .mob-menu-btn__tablet:focus {
+   background-color: #ECEBEB;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+.header__wrap {
+@media screen and (min-width: $desktop-width) {
+  display: flex;
+  margin: 0 auto;
+}
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.header__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #FFFFFF;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .header__link:hover,
+ .header__link:focus {
+   color: #d41443;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
