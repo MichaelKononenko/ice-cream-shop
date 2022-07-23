@@ -1,13 +1,13 @@
 .hero {
   position: relative;
   background-color: #ffb8ca;
-  height: 502px;
+  height: 444px;
   overflow: hidden;
   &--center {
     position: relative;
     z-index: 1;
 
-    margin-top: 194px;
+    margin-top: 136px;
   }
 
   &--title {
@@ -80,7 +80,7 @@
     border-radius: 50%;
     background-color: #ffa5ba;
     padding: 0;
-    top: 83px;
+    top: 25px;
     transform: translateX(5%);
   }
 
