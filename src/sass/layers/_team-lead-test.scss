@@ -22,6 +22,7 @@
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(90deg, gold, pink);
+  overflow-y: scroll;
 }
 .overlay {
   position: absolute;
@@ -34,11 +35,14 @@
   border-radius: 10%;
   padding: 30px;
   z-index: 1;
-  width: 80%;
+  width: 70%;
   background-color: pink;
   background-image: linear-gradient(
     135deg,
     var(--secondary-accent-color),
     var(--accent-color)
   );
+  @media screen and(min-width: $tablet-width) {
+    width: 30%;
+  }
 }
