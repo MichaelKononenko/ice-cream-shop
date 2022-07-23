@@ -3,11 +3,21 @@
   background-color: #ffb8ca;
   height: 444px;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    overflow: visible;
+    padding-top: 20px;
+    height: 355px;
+  }
   &--center {
     position: relative;
     z-index: 1;
-
     margin-top: 136px;
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+      overflow: visible;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &--title {
@@ -23,10 +33,17 @@
     width: 218px;
     height: 106px;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: 1.13;
+      width: 162px;
+      height: 80px;
+    }
   }
 
   &__list {
     display: flex;
+    margin-bottom: 20px;
   }
 
   &__item:nth-child(2) {
@@ -43,6 +60,10 @@
     text-transform: uppercase;
 
     color: #d41443;
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 0.91;
+    }
   }
 
   &__btn {
@@ -82,11 +103,107 @@
     padding: 0;
     top: 25px;
     transform: translateX(5%);
+    @media screen and (min-width: 768px) {
+      width: 335px;
+      height: 333px;
+      transform: translateX(65%);
+      top: -18px;
+    }
   }
 
   &__img {
     position: absolute;
     top: 9px;
     left: 81px;
+    @media screen and (min-width: 768px) {
+      // width: 143px;
+      top: 37px;
+      left: 74px;
+    }
   }
+}
+
+.hero__namber {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: contents;
+  }
+}
+.namber__list {
+}
+.namber__item {
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 16px;
+}
+.namber__label {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+.namber__name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #ffffff;
+}
+
+.fon__namber {
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: -4px;
+  right: -5px;
+}
+
+.hero__bio {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.bio__girl {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+  }
+}
+
+.bio__text--stule {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+
+  color: #fff;
+
+  width: 114px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 7px;
+}
+
+.bio__btn {
+  background-color: transparent;
+  border: none;
 }
