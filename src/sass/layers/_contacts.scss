@@ -295,3 +295,155 @@
   fill: currentColor;
   margin-left: 12px;
 }
+
+.contacts-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(216, 37, 112, 0.4);
+  z-index: 2;
+
+  opacity: 1;
+  transition: opacity var(--time-duration) var(--timing-function);
+
+  @media screen and (max-width: 479.5px) {
+    padding: 70px 10px;
+  }
+}
+
+.contacts-modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 35px;
+  max-width: 500px;
+  width: 100%;
+
+  background-color: #e17992;
+  border-radius: 20px;
+  text-align: center;
+
+  overflow-y: auto;
+
+  @media screen and (max-width: 400px) {
+    padding: 40px 15px;
+  }
+}
+
+.contacts-modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  font-size: 21px;
+  color: #303245;
+
+  cursor: pointer;
+}
+
+.contacts-modal__label {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: var(--primare-bg-color);
+
+  margin-bottom: 12px;
+}
+
+.contacts-modal__input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contacts-modal__input {
+  background-color: #f0d1a5;
+  color: #303245;
+  border-radius: 12px;
+  border: 0;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.contacts-modal__cut {
+  background-color: #e17992;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform var(--time-duration) var(--timing-function);
+  width: 76px;
+
+  &--short {
+    width: 50px;
+  }
+
+  .contacts-modal__input:focus ~ &,
+  .contacts-modal__input:not(:placeholder-shown) ~ & {
+    transform: translateY(8px);
+  }
+}
+
+.contacts-modal__placeholder {
+  color: #65657b;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+
+  .contacts-modal__input:focus ~ &,
+  .contacts-modal__input:not(:placeholder-shown) ~ & {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+
+  .contacts-modal__input:focus ~ &,
+  .contacts-modal__input:not(:placeholder-shown) ~ & {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+
+  .contacts-modal__input:not(:placeholder-shown) ~ & {
+    color: #f0d1a5;
+  }
+
+  .contacts-modal__input:focus ~ & {
+    color: #d41342;
+  }
+}
+
+.contacts-modal__submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  width: 192px;
+  height: 44px;
+  background-color: #d41342;
+  color: var(--primare-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  border: none;
+  transition: background-color var(--time-duration) var(--timing-function);
+
+  margin-top: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-accent-color);
+  }
+}

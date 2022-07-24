@@ -94,7 +94,7 @@
         <svg class="contacts__icon" width="8" height="11">
           <use href="./images/icons.svg#icon-sign-more"></use>
         </svg></button
-      ><button type="button" class="contacts__button contacts__button--white">
+      ><button data-modal-open type="button" class="contacts__button contacts__button--white">
         Franchise
         <svg class="contacts__icon" width="8" height="11">
           <use href="./images/icons.svg#icon-sign-more"></use>
@@ -102,4 +102,29 @@
       </button>
     </div>
   </div>
+  <div data-modal class="contacts-overlay is-hidden">
+      <div class="contacts-modal">       
+        <form>  
+          <strong class="contacts-modal__label">Leave a request and we will contact you shortly</strong>        
+          <div class="contacts-modal__input-container">
+        <input id="firstname" class="contacts-modal__input" type="text" placeholder=" " />
+        <div class="contacts-modal__cut"></div>
+        <label for="firstname" class="contacts-modal__placeholder">First name</label>
+      </div>
+      <div class="contacts-modal__input-container">
+        <input id="lastname" class="contacts-modal__input" type="text" placeholder=" " />
+        <div class="contacts-modal__cut"></div>
+        <label for="lastname" class="contacts-modal__placeholder">Last name</label>
+      </div>
+      <div class="contacts-modal__input-container">
+        <input id="email" class="contacts-modal__input" type="text" placeholder=" " />
+        <div class="contacts-modal__cut contacts-modal__cut--short"></div>
+        <label for="email" class="contacts-modal__placeholder">Email</>
+      </div>
+      <button type="text" class="contacts-modal__submit">send</button>
+      
+        </form>
+        <div data-modal-close class="contacts-modal__close">&#10006</div>
+    </div>
+      </div>
 </section>
