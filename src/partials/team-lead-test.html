@@ -19,13 +19,21 @@
         />
         <p class="buy-now__description">ice cream</p>
         <div class="buy-now__quantity-wrapper">
-          <a href="" class="quantity quantity--minus" onclick="return false;"
+          <a
+            href=""
+            class="quantity quantity--minus"
+            onclick="return false;"
+            id="minusFirst"
             ><svg class="buy-now__icon" width="20" height="20">
               <use href="./images/icons.svg#minus"></use>
             </svg>
           </a>
-          <input class="buy-now__input" type="number" attr="[object Object]" />
-          <a href="" class="quantity quantity--plus" onclick="return false;"
+          <div class="buy-now__input" id="firstCount">0</div>
+          <a
+            href=""
+            class="quantity quantity__plus"
+            onclick="return false;"
+            id="plusFirst"
             ><svg class="buy-now__icon" width="15" height="15">
               <use href="./images/icons.svg#plus"></use>
             </svg>
@@ -45,15 +53,23 @@
           alt="ice cream"
           width="100"
         />
-        <p class="buy-now__description">ice cream</p>
+        <p class="buy-now__description">ice coffee</p>
         <div class="buy-now__quantity-wrapper">
-          <a href="" class="quantity quantity--minus" onclick="return false;"
+          <a
+            href=""
+            class="quantity quantity--minus"
+            id="minusSecond"
+            onclick="return false;"
             ><svg class="buy-now__icon" width="20" height="20">
               <use href="./images/icons.svg#minus"></use>
             </svg>
           </a>
-          <input class="buy-now__input" type="number" attr="[object Object]" />
-          <a href="" class="quantity quantity--plus" onclick="return false;"
+          <div class="buy-now__input" id="secondCount">0</div>
+          <a
+            href=""
+            class="quantity quantity--plus"
+            id="plusSecond"
+            onclick="return false;"
             ><svg class="buy-now__icon" width="15" height="15">
               <use href="./images/icons.svg#plus"></use>
             </svg>
@@ -73,21 +89,29 @@
           alt="ice cream"
           width="100"
         />
-        <p class="buy-now__description">ice cream</p>
+        <p class="buy-now__description">milkshakes</p>
         <div class="buy-now__quantity-wrapper">
-          <a href="" class="quantity quantity--minus" onclick="return false;"
+          <a
+            href=""
+            class="quantity quantity--minus"
+            onclick="return false;"
+            id="minusThird"
             ><svg class="buy-now__icon" width="20" height="20">
               <use href="./images/icons.svg#minus"></use>
             </svg>
           </a>
-          <input class="buy-now__input" type="number" attr="[object Object]" />
-          <a href="" class="quantity quantity--plus" onclick="return false;"
+          <div class="buy-now__input" id="thirdCount">0</div>
+          <a
+            href=""
+            class="quantity quantity--plus"
+            onclick="return false;"
+            id="plusThird"
             ><svg class="buy-now__icon" width="15" height="15">
               <use href="./images/icons.svg#plus"></use>
             </svg>
           </a>
         </div>
-        <a href="" class="buy-now__cart" onclick="return false;">
+        <a href="" class="buy-now__cart" onclick="return false;" id="thirdPlus">
           <svg class="buy-now__icon" width="30" height="30">
             <use href="./images/icons.svg#basket"></use>
           </svg>

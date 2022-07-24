@@ -8,12 +8,6 @@
     padding-top: 20px;
     height: 335px;
   }
-
-  // удалить после исправления бага↓ ↓ ↓
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-  // удалить после исправления бага↑ ↑ ↑
   &--center {
     position: relative;
     z-index: 1;
@@ -140,8 +134,7 @@
     display: contents;
   }
 }
-.namber__list {
-}
+
 .namber__item {
   position: relative;
   margin-left: 10px;
