@@ -126,8 +126,70 @@
   }
 }
 
+.review-slider .swiper-pagination-bullets {
+  margin-top: 16px;
+  @media screen and (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
+}
+
 .review-slider .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
+  opacity: 1;
+  transition: background-color 250ms var(--timing-function);
+  @media screen and (min-width: $tablet-width) {
+    width: 14px;
+    height: 14px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+  background-color: var(--accent-color);
+  outline: transparent;
+}
+
+// .swiper-pagination {
+//   display: flex;
+//   justify-content: center;
+//   gap: 18px;
+// }
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  @media screen and (min-width: $tablet-width) {
+    gap: 18px;
+  }
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-image: url(../images/customer-reviews/home.svg);
+
+  width: 12.4px;
+  height: 11.84px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: $tablet-width) {
+    width: 14px;
+    height: 14px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 16px;
+    height: 16px;
+  }
 }
