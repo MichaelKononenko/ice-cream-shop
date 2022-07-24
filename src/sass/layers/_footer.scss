@@ -24,12 +24,15 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: 768px;
+    padding-left: 16px;
+    padding-right: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .base-container {
     max-width: 1200px;
+    padding: 0 16px;
   }
 }
 
@@ -46,7 +49,7 @@
 
 @media screen and (min-width: 1200px) {
   .upper-container {
-    max-width: 474px;
+    max-width: 477px;
     margin-bottom: 60px;
   }
 }
@@ -61,7 +64,8 @@
   .contacts-container {
     margin-top: 60px;
     margin-bottom: 0;
-    max-width: 298px;
+    margin-left: 0;
+    max-width: 268px;
   }
 }
 
@@ -85,7 +89,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .upper-container_titte {
+  .upper-container__titte {
     margin-bottom: 12px;
     font-size: 26px;
     line-height: 1.15;
@@ -94,7 +98,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .upper-container_titte {
+  .upper-container__titte {
+    margin-bottom: 16px;
     font-size: 30px;
     line-height: 1.13;
   }
@@ -112,7 +117,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .upper-container_text {
+  .upper-container__text {
     font-size: 48px;
     line-height: 1.15;
     letter-spacing: 0.06em;
@@ -120,10 +125,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .upper-container_text {
-    font-size: 52px;
-    line-height: 1.27;
-    text-align: center;
+  .upper-container__text {
+    font-size: 58px;
+    line-height: 1.14;
   }
 }
 
@@ -174,18 +178,18 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-container_link {
+  .contacts-container__link {
     font-size: 14px;
-    line-height: 1.86;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-container_link {
+  .contacts-container__link {
     font-size: 16px;
     line-height: 1.88;
   }
@@ -206,13 +210,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer_logo {
-    max-width: 298px;
+  .footer__logo {
+    max-width: 278px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
   }
 }
 
 .footer__line {
-  size: 1px;
-  background-color: solid rgba(225, 225, 225, 1);
-  margin: 0;
+  max-width: 1167px;
+  height: 0;
+  border: 1px solid #e1e1e1;
+  margin-left: auto;
+  margin-right: auto;
 }
