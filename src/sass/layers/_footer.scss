@@ -34,7 +34,6 @@
 }
 
 .upper-container {
-  display: block;
   max-width: 232px;
   margin-bottom: 40px;
 }
@@ -53,8 +52,7 @@
 }
 
 .contacts-container {
-  display: block;
-  max-width: 236px;
+  max-width: 230px;
   margin-left: auto;
   margin-bottom: 40px;
 }
@@ -75,7 +73,7 @@
   }
 }
 
-.upper-container_titte {
+.upper-container__titte {
   margin-bottom: 16px;
   font-family: 'Titan One';
   font-style: normal;
@@ -102,7 +100,7 @@
   }
 }
 
-.upper-container_text {
+.upper-container__text {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -129,13 +127,13 @@
   }
 }
 
-.contacts-container_list {
+.contacts-container__list {
   display: flex;
   margin: 0;
   justify-content: right;
 }
 
-.contacts-container_item {
+.contacts-container__item {
   width: 32px;
   height: 32px;
   &:not(:first-child) {
@@ -143,7 +141,7 @@
   }
 }
 
-.contacts-container_soc-link {
+.contacts-container__soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,23 +158,23 @@
   }
 }
 
-.contacts-container_tel {
+.contacts-container__tel {
   display: flex;
 }
 
-.contacts-container_text {
+.contacts-container__text {
   color: rgba(0, 0, 0, 1);
 }
 
-.contacts-container_link {
+.contacts-container__link {
   color: rgba(212, 20, 67, 1);
   text-align: right;
   margin-top: 40px;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 11px;
-  line-height: 1.83;
+  font-size: 12px;
+  line-height: 186%;
 }
 
 @media screen and (min-width: 768px) {
@@ -193,7 +191,7 @@
   }
 }
 
-.footer_logo {
+.footer__logo {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -213,7 +211,7 @@
   }
 }
 
-.footer_line {
+.footer__line {
   size: 1px;
   background-color: solid rgba(225, 225, 225, 1);
   margin: 0;
