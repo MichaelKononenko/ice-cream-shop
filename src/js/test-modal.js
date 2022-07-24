@@ -37,13 +37,13 @@ document.getElementById('minusFirst').onclick = function () {
   // if (count >= 1) {
   //   first.innerHTML--;
   // }
-  count > 1 ? first.innerHTML-- : 0;
+  count > 0 ? first.innerHTML-- : 0;
 };
 document.getElementById('minusSecond').onclick = function () {
   let count = second.innerHTML;
-  count > 1 ? second.innerHTML-- : 0;
+  count > 0 ? second.innerHTML-- : 0;
 };
 document.getElementById('minusThird').onclick = function () {
   let count = third.innerHTML;
-  count > 1 ? third.innerHTML-- : 0;
+  count > 0 ? third.innerHTML-- : 0;
 };

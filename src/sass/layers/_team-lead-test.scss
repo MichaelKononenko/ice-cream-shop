@@ -20,7 +20,7 @@
     var(--secondary-accent-color),
     var(--primare-bg-color)
   );
-  overflow: scroll;
+  // overflow: scroll;
 }
 .overlay {
   position: absolute;
@@ -42,6 +42,7 @@
   }
   @media screen and(min-width: $tablet-width) {
     width: 500px;
+    overflow-y: hidden;
   }
   @media screen and(min-width: $desktop-width) {
     overflow-y: hidden;
