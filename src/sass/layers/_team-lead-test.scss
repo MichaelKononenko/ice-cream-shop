@@ -16,7 +16,12 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(45deg, gold, pink);
+  background-image: linear-gradient(
+    45deg,
+    var(--accent-color),
+    var(--secondary-accent-color),
+    var(--accent-color)
+  );
   overflow: scroll;
 }
 .overlay {
@@ -26,28 +31,38 @@
   height: 100vh;
 }
 .buy-now__modal {
+  overflow-y: scroll;
   position: absolute;
+  // костыль
+  top: 30%;
   border-radius: 30px;
   padding: 30px;
   z-index: 1;
-  width: 70%;
+  // в данный момент секция респонсивная!
+  width: 60%;
   background-color: pink;
-  background-image: linear-gradient(
-    135deg,
-    var(--accent-color),
-    var(--secondary-accent-color),
-    white,
-    var(--secondary-accent-color),
-    var(--accent-color)
-  );
+  // background-image: linear-gradient(
+  //   135deg,
+  //   var(--accent-color),
+  //   var(--secondary-accent-color),
+  //   white,
+  //   var(--secondary-accent-color),
+  //   var(--accent-color)
+  // );
+  background-color: var(--secondary-accent-color);
   @media screen and(min-width: $tablet-width) {
     width: 30%;
   }
 }
+.buy-now__title {
+  text-align: center;
+  font-family: Titan One, sans-serif;
+  font-size: 18px;
+  color: var(--accent-color);
+}
 .buy-now__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .buy-now__item {
   display: flex;
@@ -72,6 +87,7 @@
   display: flex;
   justify-content: space-between;
   width: 100px;
+  margin-bottom: 10px;
 }
 .quantity {
   @include centeredFlex(flex, center, center);
@@ -92,4 +108,7 @@
   border: 1px solid var(--secondary-accent-color);
   border-radius: 5px;
   background-color: transparent;
+}
+.buy-now__cart {
+  padding: 0 20px;
 }
