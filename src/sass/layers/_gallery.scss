@@ -41,32 +41,25 @@
     margin-bottom: 8px;
   }
 }
-.gallery__item {
-  transition: scale 1s ease;
-  &:hover {
-    transform: scale(1.5);
-    @media screen and (min-width: $tablet-width) {
-      transform: scale(1.7);
-    }
-    @media screen and (min-width: $desktop-width) {
-      transform: scale(1.9);
-    }
-  }
-}
+
+
 .gallery__image {
   width: 100%;
   border-radius: 8px;
   border: transparent;
+  transition: scale(1) var( --timing-function) var(--time-duration);
   @media screen and (min-width: $tablet-width) {
     border-radius: 20px;
   }
- 
+  &:hover {
+    transform: scale(1.2);
+  
+  }
   
 }
 
 .box5 {
   width: 50%;
- 
 }
 
 .gallery__wrap-5 {
