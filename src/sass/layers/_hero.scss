@@ -10,14 +10,17 @@
   background-color: #ffb8ca;
   height: 444px;
   overflow: hidden;
+  // padding-top: 63px;
   @media screen and (min-width: 768px) {
     overflow: visible;
     padding-top: 20px;
+    padding-top: 82px;
     height: 335px;
   }
   @media screen and (min-width: 1200px) {
     overflow: visible;
     padding-top: 20px;
+    // padding-top: 88px;
     height: 573px;
   }
 
@@ -117,7 +120,6 @@
       font-size: 8px;
       line-height: 1.25;
       width: 82px;
-      
     }
     @media screen and (min-width: 1200px) {
       font-size: 14px;
@@ -299,6 +301,8 @@
 }
 
 .products__pic {
-  width: 26px;
-  height: 26px;
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
 }
