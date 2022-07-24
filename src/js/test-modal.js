@@ -8,7 +8,6 @@
   };
   refs.buyNowButton.addEventListener('click', toggleMenu);
   refs.closeLink.addEventListener('click', toggleMenu);
-  refs.header.addEventListener('click', toggleMenu);
   function toggleMenu() {
     refs.closeLink.classList.toggle('is-hidden');
     refs.buyNowModal.classList.toggle('is-hidden');
