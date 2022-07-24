@@ -1,2 +1,0 @@
-!function(){var o={buyNowButton:document.querySelector(".buy-now-button"),buyNowModal:document.querySelector(".buy-now"),closeLink:document.querySelector(".buy-now-close"),body:document.querySelector("body")};function e(){o.closeLink.classList.toggle("is-hidden"),o.buyNowModal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.buyNowButton.addEventListener("click",e),o.closeLink.addEventListener("click",e)}();
-//# sourceMappingURL=index.5ad0d5c5.js.map
