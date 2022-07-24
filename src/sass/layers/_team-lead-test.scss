@@ -7,7 +7,6 @@
 }
 .buy-now {
   position: fixed;
-  // bottom: 0;
   top: 0;
   display: flex;
   justify-content: center;
@@ -20,7 +19,6 @@
     var(--secondary-accent-color),
     var(--primare-bg-color)
   );
-  // overflow: scroll;
 }
 .overlay {
   position: absolute;
@@ -34,7 +32,7 @@
   max-height: 80vh;
   border-radius: 15px;
   padding: 30px;
-  z-index: 1;
+  z-index: 3;
   width: 60vw;
   background-color: var(--secondary-accent-color);
   @media screen and(min-width: $mobile-width) {
@@ -42,11 +40,10 @@
   }
   @media screen and(min-width: $tablet-width) {
     width: 500px;
-    overflow-y: hidden;
   }
   @media screen and(min-width: $desktop-width) {
-    overflow-y: hidden;
     width: 500px;
+    overflow-y: hidden;
   }
 }
 .buy-now__title {
