@@ -1,6 +1,9 @@
 .header {
+  position: fixed;
+  z-index: 2;
   width: 100%;
   background-color: #ffb8ca;
+  
 }
 
 .header__logo {
@@ -37,7 +40,7 @@
     position: absolute;
     top: 7px;
     right: 0px;
-    padding: 30px 20px 10px 20px;
+    padding: 35px 20px 5px 20px;
     border: 0;
     background-color: #ffb8ca;
   }
@@ -59,6 +62,7 @@
     display: none;
   }
 }
+
 
 .menu-close-btn {
   position: absolute;
@@ -93,9 +97,10 @@
   flex-direction: column;
   position: relative;
   height: 100%;
+  padding-top: 60px;
   background-color: #e17992;
   @media screen and (min-width: $tablet-width) {
-    max-width: 320px;
+    max-width: 80%;
   }
 }
 
@@ -138,7 +143,7 @@
   color: #d41443;
   cursor: pointer;
   border: none;
-  margin: 60px auto 32px auto;
+  margin: 0 auto 32px auto;
   padding: 0;
   width: 209px;
   height: 44px;
@@ -161,12 +166,15 @@
   @media screen and (min-width: $mobile-width) {
     display: none;
   }
+    @media screen and (max-width: $mobile-width) {
+      display: none;
+    }
 }
 
 .mob-menu-btn__tablet {
   @media screen and (min-width: $tablet-width) {
     //margin-left: auto;
-    position: absolute;
+    //position: absolute;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -176,8 +184,8 @@
     color: #d41443;
     cursor: pointer;
     border: none;
-    top: 32px;
-    right: 32px;
+     margin-top: 30px;
+    margin-left: auto;
     padding: 0;
     width: 160px;
     height: 44px;
@@ -186,8 +194,9 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: $desktop-width) {
-    top: 40px;
-    right: 16px;
+   margin-top: 40px;
+    //right: 16px;
+    margin-left: auto;
   }
 }
 
