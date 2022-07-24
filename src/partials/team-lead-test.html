@@ -1,6 +1,6 @@
 <section class="test">
   <div class="container test__container">
-    <button class="test__button test-modal-open-button" type="button">
+    <button class="test__button buy-now-button mob-menu-btn" type="button">
       Buy now
     </button>
     <h2 class="test__title">
@@ -40,18 +40,90 @@
     </ul>
   </div>
 </section>
-<div class="test__backdrop is-hidden">
-  <div class="test__modal">
+<div class="buy-now is-hidden">
+  <div class="buy-now__modal">
     <h2 class="test__modal-title">Lorem, ipsum dolor.</h2>
-    <p class="test__modal-description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-      sunt ab ullam quasi inventore placeat?
-    </p>
+    <ul class="buy-now__list">
+      <li class="buy-now__item">
+        <img
+          class="buy-now__image"
+          srcset="
+            ./images/products/products-ice-cream-mob-1x-min.png 1x,
+            ./images/products/products-ice-cream-mob-2x-min.png 2x
+          "
+          src="./images/products/products-ice-cream-mob-min.png"
+          alt="ice cream"
+          width="100"
+        />
+        <p class="buy-now__description">ice cream</p>
+        <div class="buy-now__quantity-wrapper">
+          <a href="" class="quantity quantity--minus" onclick="return false;"
+            ><svg class="buy-now__icon" width="20" height="20">
+              <use href="./images/icons.svg#minus"></use>
+            </svg>
+          </a>
+          <input class="buy-now__input" type="number" attr="[object Object]" />
+          <a href="" class="quantity quantity--plus" onclick="return false;"
+            ><svg class="buy-now__icon" width="15" height="15">
+              <use href="./images/icons.svg#plus"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="buy-now__item">
+        <img
+          class="buy-now__image"
+          srcset="
+            ./images/products/products-ice-coffee-mob-1x-min.png 1x,
+            ./images/products/products-ice-coffee-mob-2x-min.png 2x
+          "
+          src="./images/products/products-ice-coffee-mob-min.png"
+          alt="ice cream"
+          width="100"
+        />
+        <p class="buy-now__description">ice cream</p>
+        <div class="buy-now__quantity-wrapper">
+          <a href="" class="quantity quantity--minus" onclick="return false;"
+            ><svg class="buy-now__icon" width="20" height="20">
+              <use href="./images/icons.svg#minus"></use>
+            </svg>
+          </a>
+          <input class="buy-now__input" type="number" attr="[object Object]" />
+          <a href="" class="quantity quantity--plus" onclick="return false;"
+            ><svg class="buy-now__icon" width="15" height="15">
+              <use href="./images/icons.svg#plus"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="buy-now__item">
+        <img
+          class="buy-now__image"
+          srcset="
+            ./images/products/products-milkshakes-mob-1x-min.png 1x,
+            ./images/products/products-milkshakes-mob-2x-min.png 2x
+          "
+          src="./images/products/products-milkshakes-mob-min.png"
+          alt="ice cream"
+          width="100"
+        />
+        <p class="buy-now__description">ice cream</p>
+        <div class="buy-now__quantity-wrapper">
+          <a href="" class="quantity quantity--minus" onclick="return false;"
+            ><svg class="buy-now__icon" width="20" height="20">
+              <use href="./images/icons.svg#minus"></use>
+            </svg>
+          </a>
+          <input class="buy-now__input" type="number" attr="[object Object]" />
+          <a href="" class="quantity quantity--plus" onclick="return false;"
+            ><svg class="buy-now__icon" width="15" height="15">
+              <use href="./images/icons.svg#plus"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
   </div>
-  <a
-    href="#"
-    class="overlay test__backdrop--close test__link is-hidden"
-    onclick="return false;"
-  >
+  <a href="#" class="overlay buy-now-close is-hidden" onclick="return false;">
   </a>
 </div>

@@ -1,16 +1,15 @@
 (() => {
   const refs = {
-    openModalButton: document.querySelector('.test-modal-open-button'),
-    closeModalButton: document.querySelector('.test__backdrop--close'),
-    testModal: document.querySelector('.test__backdrop'),
-    testLink: document.querySelector('.test__link'),
+    buyNowButton: document.querySelector('.buy-now-button'),
+    buyNowModal: document.querySelector('.buy-now'),
+    closeLink: document.querySelector('.buy-now-close'),
     body: document.querySelector('body'),
   };
-  refs.openModalButton.addEventListener('click', toggleMenu);
-  refs.closeModalButton.addEventListener('click', toggleMenu);
+  refs.buyNowButton.addEventListener('click', toggleMenu);
+  refs.closeLink.addEventListener('click', toggleMenu);
   function toggleMenu() {
-    refs.testLink.classList.toggle('is-hidden');
-    refs.testModal.classList.toggle('is-hidden');
+    refs.closeLink.classList.toggle('is-hidden');
+    refs.buyNowModal.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
 })();
