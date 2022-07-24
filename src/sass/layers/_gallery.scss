@@ -52,19 +52,20 @@
     }
   }
 }
-// .gallery__image {
-//   border-radius: 8px;
-//   border: transparent;
-//   @media screen and (min-width: $tablet-width) {
-//     border-radius: 15px;
-//   }
+.gallery__image {
+  border-radius: 8px;
+  border: transparent;
+  @media screen and (min-width: $tablet-width) {
+    border-radius: 15px;
+  }
  
   
-// }
+}
 
 .gallery__wrap-5 {
     align-self: flex-start;
   margin-top: 14px;
+ 
   // @media screen and (min-width: $tablet-width) {
   //   transform: scale(1.7);
   // }
@@ -72,3 +73,4 @@
   //   transform: scale(1.9);
   // }
 }
+
