@@ -41,10 +41,11 @@
     width: 220px;
   }
   @media screen and(min-width: $tablet-width) {
-    width: 300px;
+    width: 500px;
   }
   @media screen and(min-width: $desktop-width) {
     overflow-y: hidden;
+    width: 500px;
   }
 }
 .buy-now__title {
@@ -56,6 +57,10 @@
 .buy-now__list {
   display: flex;
   flex-direction: column;
+  @media screen and(min-width:$tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .buy-now__item {
   display: flex;
@@ -70,6 +75,9 @@
 }
 .buy-now__item:not(:last-child) {
   margin-bottom: 20px;
+  @media screen and(min-width:$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 .buy-now__description {
   font-family: 'Titan One', sans-serif;

@@ -6,14 +6,20 @@
   @media screen and (min-width: 768px) {
     overflow: visible;
     padding-top: 20px;
-    height: 355px;
+    height: 335px;
   }
+
+  // удалить после исправления бага↓ ↓ ↓
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  // удалить после исправления бага↑ ↑ ↑
   &--center {
     position: relative;
     z-index: 1;
     margin-top: 136px;
     @media screen and (min-width: 768px) {
-      margin-top: 20px;
+      margin-top: 0;
       overflow: visible;
       display: flex;
       justify-content: space-between;
@@ -86,6 +92,11 @@
     border: none;
   }
 
+  &__btn--made:hover,
+  &__btn--made:focus {
+    background: #ecebeb;
+  }
+
   &__btn--product {
     background: #d41443;
     color: #ffffff;
@@ -107,7 +118,7 @@
       width: 335px;
       height: 333px;
       transform: translateX(65%);
-      top: -18px;
+      top: -38px;
     }
   }
 
@@ -194,6 +205,7 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
+  letter-spacing: 0;
 
   color: #fff;
 
