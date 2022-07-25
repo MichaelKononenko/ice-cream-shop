@@ -15,8 +15,10 @@
   }
 }
 .hide {
-  display: none;
+  opacity: 0;
+  // display: none;
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

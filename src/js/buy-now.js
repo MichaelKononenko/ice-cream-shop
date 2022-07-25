@@ -1,5 +1,6 @@
 (() => {
   const refs = {
+    reviewHide: document.querySelector('.customer-reviews'),
     buyNowButton: document.querySelector('.buy-now-button'),
     buyNowModal: document.querySelector('.buy-now'),
     closeLink: document.querySelector('.buy-now-close'),
@@ -9,6 +10,7 @@
   refs.buyNowButton.addEventListener('click', toggleMenu);
   refs.closeLink.addEventListener('click', toggleMenu);
   function toggleMenu() {
+    refs.reviewHide.classList.toggle('hide');
     refs.closeLink.classList.toggle('is-hidden');
     refs.buyNowModal.classList.toggle('is-hidden');
     refs.header.classList.toggle('hide');
@@ -21,9 +23,6 @@ let second = document.getElementById('secondCount');
 let third = document.getElementById('thirdCount');
 document.getElementById('plusFirst').onclick = function () {
   let count = first.innerHTML;
-  // if (count <= 100) {
-  //   first.innerHTML++;
-  // }
   count < 100 ? first.innerHTML++ : 0;
 };
 document.getElementById('plusSecond').onclick = function () {
@@ -36,9 +35,6 @@ document.getElementById('plusThird').onclick = function () {
 };
 document.getElementById('minusFirst').onclick = function () {
   let count = first.innerHTML;
-  // if (count >= 1) {
-  //   first.innerHTML--;
-  // }
   count > 0 ? first.innerHTML-- : 0;
 };
 document.getElementById('minusSecond').onclick = function () {
