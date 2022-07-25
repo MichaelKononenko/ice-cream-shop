@@ -1,3 +1,30 @@
+.button {
+    display: block;
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        transition: all 350ms var(--timing-function);
+        opacity: 0.3;
+        background-color: var(--primare-bg-color);
+    }
+
+    &:hover::after {
+        transform: scaleX(1.8) scaleY(1.9);
+        opacity: 0;
+        
+        background-color: var(--accent-color);
+    }
+}
+
+
 .button--white {
     position: relative;
 
@@ -29,28 +56,3 @@
     }
 }
 
-.button {
-    display: block;
-    
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 250px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-        transition: all 350ms var(--timing-function);
-        opacity: 0.3;
-        background-color: var(--primare-bg-color);
-    }
-
-    &:hover::after {
-        transform: scaleX(1.8) scaleY(1.9);
-        opacity: 0;
-        
-        background-color: var(--accent-color);
-    }
-}
