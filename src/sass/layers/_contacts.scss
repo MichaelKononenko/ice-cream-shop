@@ -416,10 +416,6 @@
   //   transform: translateY(8px);
   // }
 }
-.contacts-modal__input:focus ~ .contacts-modal__cut,
-.contacts-modal__input:not(:placeholder-shown) ~ .contacts-modal__cut {
-  transform: translateY(8px);
-}
 
 .contacts-modal__placeholder {
   position: absolute;
@@ -434,23 +430,23 @@
   transition: transform var(--time-duration) var(--timing-function),
     color var(--time-duration) var(--timing-function);
 
-  .contacts-modal__input:focus ~ &,
-  .contacts-modal__input:not(:placeholder-shown) ~ & {
-    transform: translateY(-30px) translateX(10px) scale(0.75);
-  }
+  // .contacts-modal__input:focus ~ &,
+  // .contacts-modal__input:not(:placeholder-shown) ~ & {
+  //   transform: translateY(-30px) translateX(10px) scale(0.75);
+  // }
 
-  .contacts-modal__input:focus ~ &,
-  .contacts-modal__input:not(:placeholder-shown) ~ & {
-    transform: translateY(-30px) translateX(10px) scale(0.75);
-  }
+  // .contacts-modal__input:focus ~ &,
+  // .contacts-modal__input:not(:placeholder-shown) ~ & {
+  //   transform: translateY(-30px) translateX(10px) scale(0.75);
+  // }
 
-  .contacts-modal__input:not(:placeholder-shown) ~ & {
-    color: var(--forth-bg-color);
-  }
+  // .contacts-modal__input:not(:placeholder-shown) ~ & {
+  //   color: var(--forth-bg-color);
+  // }
 
-  .contacts-modal__input:focus ~ & {
-    color: #d41342;
-  }
+  // .contacts-modal__input:focus ~ & {
+  //   color: #d41342;
+  // }
 }
 
 .contacts-modal__submit {
