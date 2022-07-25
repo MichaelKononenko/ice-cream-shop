@@ -11,6 +11,9 @@
 
 .review-slider {
   &__userpic {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
     margin: 0 auto 32px auto;
     @media screen and (min-width: $tablet-width) {
       margin-bottom: 20px;
@@ -42,7 +45,7 @@
       height: 40px;
       top: 30px;
       left: 53px;
-      background-image: url(../images/customer-reviews/“.png);
+      background-image: url(../images/customer-reviews/quote-icon.svg);
       background-size: cover;
       background-repeat: no-repeat;
       @media screen and (min-width: $tablet-width) {
@@ -175,7 +178,7 @@
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {
-  background-image: url(../images/customer-reviews/home.svg);
+  background-image: url(../images/customer-reviews/home-icon.svg);
 
   width: 12.4px;
   height: 11.84px;
