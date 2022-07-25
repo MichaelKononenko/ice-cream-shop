@@ -235,16 +235,17 @@
   height: 44px;
   background-color: #d41342;
   color: var(--primare-bg-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   через цю тінь не затосується загальна анімація для кнопок
   border-radius: 22px;
   border: none;
 
-  transition: background-color var(--time-duration) var(--timing-function);
+  // transition: background-color var(--time-duration) var(--timing-function);
 
-  &:hover,
-  &:focus {
-    background-color: var(--secondary-accent-color);
-  }
+  //прописані загальні стилі ховера і фокуса
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--secondary-accent-color);
+  // }
 
   @media screen and (min-width: $tablet-width) {
     width: 192px;
@@ -258,14 +259,15 @@
 .contacts__button.contacts__button--white {
   background-color: var(--primare-bg-color);
   color: var(--accent-color);
-  box-shadow: none;
+  //box-shadow: none;
 
-  transition: background-color var(--time-duration) var(--timing-function);
+  // transition: background-color var(--time-duration) var(--timing-function);
 
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
+  //прописані загальні стилі ховера і фокуса
+  // &:hover,
+  // &:focus {
+  //   background-color: #ecebeb;
+  // }
 
   @media screen and (min-width: $tablet-width) {
     width: 174px;
@@ -456,6 +458,8 @@
   width: 192px;
   height: 44px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-transform: uppercase;
   font-weight: 700;
@@ -466,10 +470,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
   border: none;
-  transition: background-color var(--time-duration) var(--timing-function);
+  // transition: background-color var(--time-duration) var(--timing-function);
 
-  &:hover,
-  &:focus {
-    background-color: var(--secondary-accent-color);
-  }
+  //прописані загальні стилі ховера і фокуса
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--secondary-accent-color);
+  // }
 }

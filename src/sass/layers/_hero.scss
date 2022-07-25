@@ -131,10 +131,11 @@
     }
   }
 
-  &__btn--made:hover,
-  &__btn--made:focus {
-    background: #ecebeb;
-  }
+  // ховер прописаний в загальних стилях
+  // &__btn--made:hover,
+  // &__btn--made:focus {
+  //   background: #ecebeb;
+  // }
 
   &__btn--product {
     background: #d41443;

@@ -181,14 +181,14 @@
   height: 44px;
   border-radius: 22px;
   background-color: var(--primare-bg-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu-btn:hover,
-.mob-menu-btn:focus {
-  background-color: #ecebeb;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// прописані загальні стилі для ховера
+// .mob-menu-btn:hover,
+// .mob-menu-btn:focus {
+//   background-color: #ecebeb;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
 .mob-menu-btn__icon {
   margin-left: 15px;
@@ -220,7 +220,6 @@
     height: 44px;
     border-radius: 22px;
     background-color: var(--primare-bg-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: $desktop-width) {
     margin-top: 40px;
@@ -228,11 +227,12 @@
   }
 }
 
-.mob-menu-btn__tablet:hover,
-.mob-menu-btn__tablet:focus {
-  background-color: #ecebeb;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// прописані загальні стилі для ховера
+// .mob-menu-btn__tablet:hover,
+// .mob-menu-btn__tablet:focus {
+//   background-color: #ecebeb;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
 .header__wrap {
   @media screen and (min-width: $desktop-width) {
