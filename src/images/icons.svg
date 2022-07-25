@@ -12,7 +12,7 @@
 <symbol id="icon-svg-btn-close" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
-<symbol id="icon-svg-btn" viewBox="0 0 22 30">
+<symbol id="icon-svg-btn" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.826 12.8-16.826 12.8"></path>
 </symbol>
 <symbol id="icon-more" viewBox="0 0 26 32">
