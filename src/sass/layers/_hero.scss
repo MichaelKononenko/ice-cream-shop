@@ -10,18 +10,20 @@
   background-color: #ffb8ca;
   height: 444px;
   overflow: hidden;
-  // padding-top: 63px;
+  padding-top: 63px;
   @media screen and (min-width: 768px) {
     overflow: visible;
-    padding-top: 20px;
-    padding-top: 82px;
-    height: 335px;
+    // padding-top: 20px;
+    padding-top: 101px;
+    // height: 335px;
+    height: 416px;
   }
   @media screen and (min-width: 1200px) {
     overflow: visible;
-    padding-top: 20px;
-    // padding-top: 88px;
-    height: 573px;
+    // padding-top: 20px;
+    // padding-top: 91px;
+    padding-top: 111px;
+    height: 664px;
   }
 
   &--center {
@@ -198,6 +200,12 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: contents;
+  }
+}
+
+.namber__list {
+  @media screen and (min-width: 1200px) {
+    padding-top: 68px;
   }
 }
 
