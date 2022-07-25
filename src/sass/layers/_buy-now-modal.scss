@@ -1,4 +1,12 @@
+.overlay {
+  position: fixed;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
 .buy-now {
+  transform: scale(1);
   position: fixed;
   top: 0;
   display: flex;
@@ -7,24 +15,18 @@
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-  // background-image: linear-gradient(
-  //   90deg,
-  //   var(--primare-bg-color),
-  //   var(--secondary-accent-color),
-  //   var(--primare-bg-color)
-  // );
-  background-image: linear-gradient(
-    90deg,
-    transparent,
+  background-image: radial-gradient(
     var(--secondary-accent-color),
+    rgba(0, 0, 0, 0.2),
     transparent
   );
+  //   background-color: rgba(0, 0, 0, 0.2);
 }
-.overlay {
-  position: absolute;
-  background: transparent;
-  width: 100vw;
-  height: 100vh;
+.is-hidden .buy-now__modal {
+  transform: scale(50%);
+}
+.buy-now.is-hidden {
+  transition: opacity var(--time-duration) var(--timing-function);
 }
 .buy-now__modal {
   overflow-y: scroll;
@@ -32,18 +34,14 @@
   max-height: 80vh;
   border-radius: 15px;
   padding: 30px;
-  z-index: 3;
+  z-index: 6;
   width: 60vw;
   opacity: 1;
-  // background-image: linear-gradient(
-  //   90deg,
-  //   var(--primare-bg-color),
-  //   var(--secondary-accent-color),
-  //   transparent 50%,
-  //   var(--primare-bg-color)
-  // );
-  background-color: var(--secondary-accent-color);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  visibility: visible;
+  transform: scale(1);
+  transition: transform var(--time-duration) var(--timing-function);
+
+  background-color: var(--secondary-bg-color);
   @media screen and(min-width: $mobile-width) {
     width: 220px;
   }
@@ -53,6 +51,25 @@
   @media screen and(min-width: $desktop-width) {
     width: 500px;
     overflow-y: hidden;
+  }
+}
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  background: var(--main-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transition: border var(--time-duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    border: 1px solid rgba(137, 59, 209, 0.97);
   }
 }
 .buy-now__title {
@@ -75,11 +92,25 @@
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  padding: 10px;
+}
+.buy-now__item--first {
   background-image: linear-gradient(
     var(--secondary-accent-color),
     var(--primare-bg-color)
   );
-  padding: 10px;
+}
+.buy-now__item--second {
+  background-image: linear-gradient(
+    var(--forth-bg-color),
+    var(--primare-bg-color)
+  );
+}
+.buy-now__item--third {
+  background-image: linear-gradient(
+    var(--third-bg-color),
+    var(--primare-bg-color)
+  );
 }
 .buy-now__item:not(:last-child) {
   margin-bottom: 20px;

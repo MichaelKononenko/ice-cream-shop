@@ -16,7 +16,7 @@
 }
 .hide {
   opacity: 0;
-  // display: none;
+  pointer-events: none;
 }
 
 .visually-hidden {

@@ -4,9 +4,8 @@
   width: 100%;
   background-color: #ffb8ca;
   @media screen and (min-width: $tablet-width) {
-   background: rgba(241, 154, 154, 0.3);
+    background: rgba(241, 154, 154, 0.3);
   }
-  
 }
 
 .header__logo {
@@ -173,7 +172,6 @@
   align-items: center;
   justify-content: center;
   color: #d41443;
-  cursor: pointer;
   border: none;
   margin: 0 auto 32px auto;
   padding: 0;
@@ -198,6 +196,7 @@
   @media screen and (min-width: $mobile-width) {
     display: none;
   }
+  // Возможно строка ниже лишняя ибо стили и так будут работать только до слудующего медиазапроса то есть min-width:$tablet...
   @media screen and (max-width: $mobile-width) {
     display: none;
   }
@@ -212,7 +211,6 @@
     align-items: center;
     justify-content: center;
     color: #d41443;
-    cursor: pointer;
     border: none;
     margin-top: 30px;
     padding: 0;

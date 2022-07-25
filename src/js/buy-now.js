@@ -1,15 +1,23 @@
 (() => {
   const refs = {
+    // menuHide: document.querySelector('.mob-menu'),
+    //костыль ниже
+    heroHide: document.querySelector('.hero'),
     reviewHide: document.querySelector('.customer-reviews'),
     buyNowButton: document.querySelector('.buy-now-button'),
+    buyButton: document.querySelector('.mob-menu-btn'),
     buyNowModal: document.querySelector('.buy-now'),
     closeLink: document.querySelector('.buy-now-close'),
+    closeIcon: document.querySelector('.close-icon'),
     header: document.getElementById('hideHeader'),
     body: document.querySelector('body'),
   };
   refs.buyNowButton.addEventListener('click', toggleMenu);
   refs.closeLink.addEventListener('click', toggleMenu);
+  refs.closeIcon.addEventListener('click', toggleMenu);
   function toggleMenu() {
+    refs.heroHide.classList.toggle('hide');
+    // refs.menuHide.classList.toggle('is-hidden');
     refs.reviewHide.classList.toggle('hide');
     refs.closeLink.classList.toggle('is-hidden');
     refs.buyNowModal.classList.toggle('is-hidden');
