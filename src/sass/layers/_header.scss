@@ -2,14 +2,17 @@
   position: fixed;
   z-index: 2;
   width: 100%;
-  background: rgba(0, 0, 0, 0);
+  background-color: #ffb8ca;
+  @media screen and (min-width: $tablet-width) {
+   background: rgba(241, 154, 154, 0.3);
+  }
+  
 }
 
 .header__logo {
   position: relative;
   padding-top: 8px;
   background: rgba(0, 0, 0, 0);
-  //max-width: 100%;
   @media screen and (min-width: $tablet-width) {
     padding-top: 32px;
     display: flex;
