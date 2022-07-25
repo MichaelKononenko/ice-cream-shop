@@ -205,12 +205,6 @@
   background-color: var(--primare-bg-color);
   border-radius: 22px;
   border: none;
-  transition: background-color var(--time-duration) var(--timing-function);
-
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
 
   @media screen and (min-width: $tablet-width) {
     font-size: 16px;
