@@ -19,6 +19,10 @@ body.about-modal--open {
   width: 100%;
   margin: 0 auto;
   padding: 50px 15px;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
 }
 
 .about-modal {
