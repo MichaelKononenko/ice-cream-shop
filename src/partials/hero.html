@@ -13,7 +13,7 @@
           </li>
           <li class="hero__item">
             <button class="hero__btn hero__btn--made" type="button">
-              How it’s made?
+              How it’s made
             </button>
           </li>
         </ul>
@@ -53,7 +53,7 @@
         />
         <img
           src="./images/hero/milk-hero-tab-min.png"
-          alt="Photo of ice cream with six flavors"
+          alt="Photo of a jug with milk"
           class="bio__milk"
         />
       </picture>
@@ -62,12 +62,16 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button class="bio__btn" type="button">
-          <svg class="products__pic" width="18" height="18">
+
+        <a
+          class="bio__btn"
+          href="https://en.wikipedia.org/wiki/Ice_cream"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          ><svg class="products__pic" width="18" height="18">
             <use href="./images/icons.svg#icon-arrow-right2"></use>
           </svg>
-          </picture>
-        </button>
+        </a>
       </div>
     </div>
 
@@ -91,7 +95,7 @@
         />
         <source
           srcset="
-            ./images/hero/slider-des-min.png     1x,
+            ./images/hero/slider-des-min.png    1x,
             ./images/hero/slider-des@2x-min.png 2x
           "
           type="image/png"
@@ -123,9 +127,45 @@
       />
       <img
         src="./images/hero/girl-hero-tab-min.png"
-        alt="Photo of ice cream with six flavors"
+        alt="Woman eats delicious ice cream"
         class="bio__girl"
       />
     </picture>
+  </div>
+  <div class="backdrop is-hidden">
+    <div class="hero__video">
+      <button type="button" class="btn__icon--video">
+        <svg class="icon-video" width="11" height="11">
+          <use href="./images/icons.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <iframe
+        class="hero__video--wight"
+        width="100"
+        height="100"
+        src="https://www.youtube.com/embed/uGfmbngKTqI"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+  <div class="backdrop-made is-hidden">
+    <div class="hero__video">
+      <button type="button" class="btn__icon--video-made">
+        <svg class="icon-video" width="11" height="11">
+          <use href="./images/icons.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <iframe
+        class="hero__video--wight"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/j0klSJR0DM0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </section>
