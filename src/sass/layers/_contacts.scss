@@ -402,13 +402,24 @@
 
 .contacts-modal__close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 12px;
+  right: 12px;
 
   font-size: 21px;
   color: #303245;
+  width: 27px;
+  height: 27px;
+  background-color: var(--main-background-color);
+  transition: color var(--time-duration) var(--timing-function);
 
-  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px #f66d8e, -10px -10px 15px #ec7f99;
+
+  &:hover,
+  &:focus {
+    color: var(--forth-bg-color);
+  }
 }
 
 .contacts-modal__label {
@@ -517,4 +528,29 @@
   // &:focus {
   //   background-color: var(--secondary-accent-color);
   // }
+}
+
+.contacts-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // max-width: 900px;
+  // width: 250px;
+  padding: 10px;
+  z-index: 6;
+  background-color: var(--primare-bg-color);
+  border-radius: 30px;
+}
+.map-frame {
+  width: 250px;
+  height: 350px;
+  @media screen and (min-width: $tablet-width) {
+    width: 750px;
+  }
+}
+.ViewMap__Title-sc-1nid2o5-4 {
+  color: #d41342;
+  font-family: Titan One, sans-serif;
+  font-size: 20px;
 }

@@ -107,12 +107,13 @@
       </li>
     </ul>
     <div class="contacts__buttons">
-      <button type="button" class="contacts__button button button--pink">
+      <button type="button" class="contacts__button map-open-button button button--pink">
         Our Locations
         <svg class="contacts__icon" width="8" height="11">
           <use href="./images/icons.svg#icon-sign-more"></use>
-        </svg></button
-      ><button data-modal-open type="button" class="contacts__button contacts__button--white button button--white">
+        </svg>
+        </button>
+        <button data-modal-open type="button" class="contacts__button contacts__button--white button button--white">
         Franchise
         <svg class="contacts__icon" width="8" height="11">
           <use href="./images/icons.svg#icon-sign-more"></use>
@@ -121,29 +122,36 @@
     </div>
   </div>
   <div data-modal class="contacts-overlay is-hidden">
-      <div class="contacts-modal">       
-        <form>  
-          <strong class="contacts-modal__label">Leave a request and we will contact you shortly</strong>        
-          <div class="contacts-modal__input-container">
-        <input id="firstname" class="contacts-modal__input" type="text" placeholder="." />
-        <div class="contacts-modal__cut"></div>
-        <label for="firstname" class="contacts-modal__placeholder">First name</label>
-      </div>
-      <div class="contacts-modal__input-container">
-        <input id="lastname" class="contacts-modal__input" type="text" placeholder="." />
-        <div class="contacts-modal__cut"></div>
-        <label for="lastname" class="contacts-modal__placeholder">Last name</label>
-      </div>
-      <div class="contacts-modal__input-container">
-        <input id="email" class="contacts-modal__input" type="text" placeholder="." />
-        <div class="contacts-modal__cut contacts-modal__cut--short"></div>
-        <label for="email" class="contacts-modal__placeholder">Email</label>
-      </div>
-      <button type="button" class="contacts-modal__submit button button--pink">send</button>
+        <div class="contacts-modal">       
+          <form>  
+            <strong class="contacts-modal__label">Leave a request and we will contact you shortly</strong>        
+            <div class="contacts-modal__input-container">
+          <input id="firstname" class="contacts-modal__input" type="text" placeholder="." />
+          <div class="contacts-modal__cut"></div>
+          <label for="firstname" class="contacts-modal__placeholder">First name</label>
+        </div>
+        <div class="contacts-modal__input-container">
+          <input id="lastname" class="contacts-modal__input" type="text" placeholder="." />
+          <div class="contacts-modal__cut"></div>
+          <label for="lastname" class="contacts-modal__placeholder">Last name</label>
+        </div>
+        <div class="contacts-modal__input-container">
+          <input id="email" class="contacts-modal__input" type="text" placeholder="." />
+          <div class="contacts-modal__cut contacts-modal__cut--short"></div>
+          <label for="email" class="contacts-modal__placeholder">Email</label>
+        </div>
+        <button type="button" class="contacts-modal__submit button button--pink">send</button>
       
         </form>
-        <div data-modal-close class="contacts-modal__close"><p>&#10006</p></div>
+        <button data-modal-close class="contacts-modal__close"><p>&#10006</p></button>
       </div>
       <a href="#" data-modal-close class="overlay-link-close overlay" onclick="return false;"></a>
+  </div>
+  <div class="contacts-overlay map-modal is-hidden">
+    <div class="contacts-map">
+   <iframe class="map-frame" src="https://my.atlistmaps.com/map/b8931072-24ba-45f5-b413-e0266d13781c?share=true" allow="geolocation" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+     <a href="#" class="overlay map-close" onclick="return false;">
+  </a>
   </div>
 </section>

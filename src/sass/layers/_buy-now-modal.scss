@@ -73,6 +73,13 @@
     border: 1px solid rgba(137, 59, 209, 0.97);
   }
 }
+.buy-now__icon-close {
+  fill: black;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
 .buy-now__title {
   text-align: center;
   font-family: Titan One, sans-serif;
