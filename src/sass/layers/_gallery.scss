@@ -1,23 +1,19 @@
 .gallery {
-  
-    padding-top: 60px;
-   
-    background-image: linear-gradient(
-      180deg,
-      var(--secondary-bg-color) 42%,
-      var(--primare-bg-color) 0
-    );
-  
+  padding-top: 60px;
+
+  background-image: linear-gradient(
+    180deg,
+    var(--secondary-bg-color) 42%,
+    var(--primare-bg-color) 0
+  );
+
   @media screen and (min-width: $tablet-width) {
     padding-top: 64px;
- 
   }
   @media screen and (min-width: $desktop-width) {
     padding-top: 120px;
   }
 }
-
-
 
 .gallery__list {
   display: flex;
@@ -42,7 +38,6 @@
   }
 }
 
-
 .gallery__image {
   width: 100%;
   border-radius: 8px;
@@ -53,9 +48,7 @@
   }
   &:hover {
     transform: scale(1.2);
-  
   }
-  
 }
 
 .box5 {
@@ -63,7 +56,7 @@
 }
 
 .gallery__wrap-5 {
-    align-self: flex-start;
+  align-self: flex-start;
   margin-top: 14px;
   @media screen and (min-width: $tablet-width) {
     margin-top: 40px;
@@ -71,6 +64,4 @@
   @media screen and (min-width: $desktop-width) {
     margin-top: 43px;
   }
-
 }
-
