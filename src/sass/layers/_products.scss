@@ -86,7 +86,6 @@
   height: 100%;
   display: block;
   position: relative;
-  transform-style: preserve-3d;
   margin-top: 140px;
   @media screen and (min-width: 320px) {
     margin-top: 140px;
@@ -113,6 +112,7 @@
 .products__item__card-back {
   background-image: linear-gradient(
     45deg,
+    var(--accent-color),
     var(--secondary-accent-color),
     var(--forth-bg-color),
     var(--third-bg-color),
@@ -168,12 +168,14 @@
   text-transform: uppercase;
   @include font(null, 20px, 23px, 0.04em, center, var(--primare-bg-color));
   margin-bottom: 30px;
+}
+
+.products__text__card-back {
   display: block;
   width: 100%;
   text-align: center;
   justify-content: center;
   align-content: center;
-  transform: perspective(500px) translateZ(50px);
 }
 
 .products__card {
@@ -382,7 +384,6 @@
     @include font(700, 16px, 28px, 0.04em, center, var(--primare-bg-color));
     margin-bottom: 60px;
   }
-  transform: perspective(500px) translateZ(50px);
 }
 
 .products__holder {
@@ -407,24 +408,6 @@
   border-radius: 50%;
   border-radius: transparent;
   @include centeredFlex(flex, center, center);
-}
-.products__card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 2s ease-in-out;
-  backface-visibility: hidden;
-  transition: perspective(500px) rotatey(0deg);
-}
-
-.products__item__card-back {
-  transform: perspective(500px) rotateY(180deg);
 }
 
 .products__item {
@@ -456,13 +439,13 @@
   text-transform: uppercase;
   margin-top: 20px;
 
-  @include font(null, 14px, 17px, 0.04em, center, var(--third-accent-color));
+  @include font(null, 14px, 17px, 0.04em, center, var(--accent-color));
   @media screen and (min-width: 768px) {
     background-color: transparent;
     margin-top: 0px;
   }
   @media screen and (min-width: 1200px) {
-    @include font(null, 23px, 28px, 0.04em, center, var(--third-accent-color));
+    @include font(null, 23px, 28px, 0.04em, center, var(--accent-color));
   }
 }
 
@@ -477,7 +460,7 @@
   }
 }
 .products__icon__card-back {
-  fill: var(--third-accent-color);
+  fill: var(--accent-color);
   border-radius: 50%;
 }
 .products__text__card-back {
@@ -485,12 +468,12 @@
   align-content: flex-end;
   margin-top: 10px;
   margin-bottom: auto;
-  @include font(400, 14px, 21px, 0.04em, center, var(--third-accent-color));
+  @include font(400, 14px, 21px, 0.04em, center, var(--accent-color));
   @media screen and (min-width: 768px) {
-    @include font(400, 14px, 25px, 0.04em, center, var(--third-accent-color));
+    @include font(400, 14px, 25px, 0.04em, center, var(--accent-color));
   }
   @media screen and (min-width: 1200px) {
-    @include font(400, 16px, 28px, 0.04em, center, var(--third-accent-color));
+    @include font(400, 16px, 28px, 0.04em, center, var (--accent-color));
   }
 }
 .products__holder__card-back {
