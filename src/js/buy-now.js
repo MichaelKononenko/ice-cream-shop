@@ -1,6 +1,6 @@
 (() => {
   const refs = {
-    menu: document.querySelector('.mob-menu'),
+    // menu: document.querySelector('.mob-menu'),
     menuHide: document.querySelector('.mob-menu'),
     //костыль ниже
     heroHide: document.querySelector('.hero'),
@@ -19,7 +19,7 @@
   refs.closeLink.addEventListener('click', toggleMenu);
   refs.closeIcon.addEventListener('click', toggleMenu);
   function toggleMenu() {
-    refs.menu.classList.toggle('is-shown');
+    // refs.menu.classList.toggle('is-shown');
     refs.heroHide.classList.toggle('hide');
     refs.menuHide.classList.toggle('hide');
     refs.reviewHide.classList.toggle('hide');
