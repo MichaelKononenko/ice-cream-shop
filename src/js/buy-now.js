@@ -9,7 +9,7 @@
     buyNowModal: document.querySelector('.buy-now'),
     closeLink: document.querySelector('.buy-now-close'),
     closeIcon: document.querySelector('.close-icon'),
-    header: document.getElementById('hideHeader'),
+    // header: document.getElementById('hideHeader'),
     body: document.querySelector('body'),
   };
   refs.buyNowButton.addEventListener('click', toggleMenu);
@@ -21,7 +21,7 @@
     refs.reviewHide.classList.toggle('hide');
     refs.closeLink.classList.toggle('is-hidden');
     refs.buyNowModal.classList.toggle('is-hidden');
-    refs.header.classList.toggle('hide');
+    // refs.header.classList.toggle('hide');
     refs.body.classList.toggle('no-scroll');
   }
 })();

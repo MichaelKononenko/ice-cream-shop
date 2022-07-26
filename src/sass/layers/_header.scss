@@ -1,7 +1,8 @@
 .header {
+  outline: 1px solid purple;
   position: fixed;
   z-index: 2;
-  width: 100%;
+  width: 100vw;
   background-color: #ffb8ca;
   @media screen and (min-width: $tablet-width) {
     background: rgba(241, 154, 154, 0.3);
@@ -27,32 +28,38 @@
   display: none;
 }
 
+// Удалить дублируемые стили
+// нет смысла указывать одинаковые стили для разных медиазапросов
 .menu-open-btn {
   display: block;
-  margin-left: auto;
+  // margin-left: auto; без него тоже работает
   position: absolute;
-  top: 7px;
+  top: 15px;
   right: 0px;
   padding: 10px;
   background-color: #ffb8ca;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  border-width: 4px;
-  border-style: solid;
-  border-color: #ffb8ca;
+  border-width: 0;
+  // border-width: 4px;
+  // border-style: solid;
+  // border-color: #ffb8ca;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: $tablet-width) {
     display: block;
     position: absolute;
-    margin-top: 25px;
+    // Плохая идея делать отсуп от стенки секции через маржин
+    // margin-top: 25px;
+    // добавил строку ниже
+    top: 40px;
     right: 0px;
     padding: 10px;
     background-color: #ffb8ca;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #ffb8ca;
+    // border-width: 3px;
+    // border-style: solid;
+    // border-color: #ffb8ca;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: $desktop-width) {
@@ -71,7 +78,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   transition: opacity 250ms linear, visibility 250ms linear;
   @media screen and (min-width: $desktop-width) {
