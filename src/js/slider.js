@@ -2,7 +2,6 @@ new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    // dynamicBullets: true,
   },
 
   simulateTouch: true,
@@ -16,7 +15,6 @@ new Swiper('.swiper', {
     sensitivity: 1,
     eventsTarget: '.swiper-slide',
   },
-  // autoHeight: true,
   loop: true,
   speed: 800,
   effect: 'cube',
