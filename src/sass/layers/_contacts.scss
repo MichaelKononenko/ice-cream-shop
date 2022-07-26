@@ -41,24 +41,58 @@
   }
 }
 .contacts-card {
+  position: relative;
   background-color: var(--primare-bg-color);
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  min-height: 422px;
   border-radius: 24px;
-  padding: 40px 32px;
+  // padding: 40px 32px;
 
   @media screen and (min-width: $tablet-width) {
     flex-basis: calc((100% - 64px) / 3);
+    min-height: 568px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 40px;
+    // padding: 40px;
+    min-height: 558px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
-.contacts-card:not(:last-child) {
-  margin-bottom: 20px;
-  @media screen and (min-width: $tablet-width) {
-    margin-bottom: 0;
+// секция .contacts-card требует доработки.
+// Закомментированные свойства на всякий случай от старой версии карточки без ховера на ней и абсолютного позицонирования box внутри нее
+
+.contacts__box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  padding: 30px 22px;
+  background-color: var(--primare-bg-color);
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(255, 0, 64, 0.5);
+
+  transition: transform var(--time-duration) var(--timing-function),
+    box-shadow var(--time-duration) var(--timing-function);
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 30px;
+  }
+
+  .contacts-card:hover & {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 40px rgba(255, 0, 64, 0.8);
   }
 }
 
@@ -392,9 +426,10 @@
   outline: 0;
   padding: 4px 20px 0;
   width: 100%;
-}
-.contacts-modal__input::placeholder {
-  color: transparent;
+
+  &::placeholder {
+    color: transparent;
+  }
 }
 
 .contacts-modal__cut {
@@ -432,11 +467,6 @@
   transform-origin: 0 50%;
   transition: transform var(--time-duration) var(--timing-function),
     color var(--time-duration) var(--timing-function);
-
-  .contacts-modal__input:focus ~ &,
-  .contacts-modal__input:not(:placeholder-shown) ~ & {
-    transform: translateY(-30px) translateX(10px) scale(0.75);
-  }
 
   .contacts-modal__input:focus ~ &,
   .contacts-modal__input:not(:placeholder-shown) ~ & {

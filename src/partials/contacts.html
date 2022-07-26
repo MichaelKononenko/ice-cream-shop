@@ -3,7 +3,8 @@
   <div class="container">
     <ul class="contacts__list">
       <li class="contacts-card">
-        <p class="contacts-card__representation">CAFE</p>
+        <div class="contacts__box">        
+          <p class="contacts-card__representation">CAFE</p>
         <div class="contacts-card__location">
           <h3 class="contacts-card__town">Chicago</h3>
           <p class="contacts-card__text">
@@ -31,9 +32,11 @@
           >
           </li>
         </ul>
+      </div>
       </li>
       <li class="contacts-card">
-        <p
+        <div class="contacts__box">        
+          <p
           class="contacts-card__representation contacts-card__representation--green"
         >
           FOODTRUCK
@@ -66,9 +69,11 @@
           >
           </li>
         </ul>
+      </div>
       </li>
       <li class="contacts-card">
-        <p class="contacts-card__representation">CAFE</p>
+        <div class="contacts__box">        
+          <p class="contacts-card__representation">CAFE</p>
         <div class="contacts-card__location">
           <h3 class="contacts-card__town">New York</h3>
           <p class="contacts-card__text">
@@ -93,10 +98,12 @@
           </li>
           <li>
                       <a href="mailto:noreply@envato.com" class="contacts-card__link"
-            >noreply@envato.com</a
+            >noreply@envato.com
+            </a
           >
           </li>
         </ul>
+        </div>
       </li>
     </ul>
     <div class="contacts__buttons">
@@ -118,22 +125,21 @@
         <form>  
           <strong class="contacts-modal__label">Leave a request and we will contact you shortly</strong>        
           <div class="contacts-modal__input-container">
-        <input id="firstname" class="contacts-modal__input" type="text" placeholder="..." />
+        <input id="firstname" class="contacts-modal__input" type="text" placeholder="." />
         <div class="contacts-modal__cut"></div>
         <label for="firstname" class="contacts-modal__placeholder">First name</label>
       </div>
       <div class="contacts-modal__input-container">
-        <input id="lastname" class="contacts-modal__input" type="text" placeholder=" " />
+        <input id="lastname" class="contacts-modal__input" type="text" placeholder="." />
         <div class="contacts-modal__cut"></div>
         <label for="lastname" class="contacts-modal__placeholder">Last name</label>
       </div>
       <div class="contacts-modal__input-container">
-        <input id="email" class="contacts-modal__input" type="text" placeholder=" " />
+        <input id="email" class="contacts-modal__input" type="text" placeholder="." />
         <div class="contacts-modal__cut contacts-modal__cut--short"></div>
         <label for="email" class="contacts-modal__placeholder">Email</label>
       </div>
       <button type="button" class="contacts-modal__submit">send</button>
-      
         </form>
         <div data-modal-close class="contacts-modal__close">&#10006</div>
         </div>
