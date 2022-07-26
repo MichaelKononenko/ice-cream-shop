@@ -112,7 +112,6 @@
 .products__item__card-back {
   background-image: linear-gradient(
     45deg,
-    var(--accent-color),
     var(--secondary-accent-color),
     var(--forth-bg-color),
     var(--third-bg-color),
@@ -416,6 +415,7 @@
 .products__item:hover .products__item__card-back {
   transform: rotateY(360deg);
 }
+
 .products__item__card-front {
   position: relative;
   transform: 2s;
@@ -434,13 +434,13 @@
   text-transform: uppercase;
   margin-top: 20px;
 
-  @include font(null, 14px, 17px, 0.04em, center, var(--accent-color));
+  @include font(null, 14px, 17px, 0.04em, center, var(--third-accent-color));
   @media screen and (min-width: 768px) {
     background-color: transparent;
     margin-top: 0px;
   }
   @media screen and (min-width: 1200px) {
-    @include font(null, 23px, 28px, 0.04em, center, var(--accent-color));
+    @include font(null, 23px, 28px, 0.04em, center, var(--third-accent-color));
   }
 }
 
@@ -455,7 +455,7 @@
   }
 }
 .products__icon__card-back {
-  fill: var(--accent-color);
+  fill: var(--third-accent-color);
   border-radius: 50%;
 }
 .products__text__card-back {
@@ -463,12 +463,12 @@
   align-content: flex-end;
   margin-top: 10px;
   margin-bottom: auto;
-  @include font(400, 14px, 21px, 0.04em, center, var(--accent-color));
+  @include font(400, 14px, 21px, 0.04em, center, var(--third-accent-color));
   @media screen and (min-width: 768px) {
-    @include font(400, 14px, 25px, 0.04em, center, var(--accent-color));
+    @include font(400, 14px, 25px, 0.04em, center, var(--third-accent-color));
   }
   @media screen and (min-width: 1200px) {
-    @include font(400, 16px, 28px, 0.04em, center, var (--accent-color));
+    @include font(400, 16px, 28px, 0.04em, center, var(--third-accent-color));
   }
 }
 .products__holder__card-back {
