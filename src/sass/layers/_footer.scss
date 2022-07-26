@@ -15,7 +15,7 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 20px 40px 20px;
   max-width: 320px;
 }
 
@@ -24,15 +24,14 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 20px;
+    padding: 0 16px 40px 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .base-container {
     max-width: 1200px;
-    padding: 0 16px;
+    padding: 0 16px 60px 16px;
   }
 }
 
@@ -44,34 +43,35 @@
 @media screen and (min-width: 768px) {
   .upper-container {
     max-width: 340px;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .upper-container {
     max-width: 477px;
-    margin-bottom: 60px;
   }
 }
 
 .contacts-container {
   max-width: 230px;
   margin-left: auto;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
   .contacts-container {
-    margin-top: 60px;
     margin-bottom: 0;
     margin-left: 0;
+    padding-top: 60px;
+    padding-bottom: 0;
     max-width: 268px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-container {
-    margin-bottom: 60px;
+    padding-top: 12px;
     margin-top: 0;
     max-width: 339px;
   }
@@ -199,7 +199,7 @@
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
+  padding-top: 16px;
   text-align: center;
   font-family: 'DM Sans';
   font-style: normal;
@@ -214,7 +214,7 @@
     max-width: 278px;
     line-height: 186%;
     letter-spacing: 0.02em;
-    margin-top: 8px;
+    padding-top: 8px;
   }
 }
 
