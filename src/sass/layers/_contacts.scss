@@ -54,6 +54,11 @@
     padding: 40px;
   }
 }
+// plan b
+// .contacts-card:hover {
+//   transform: translateX(10px) translateY(-10px);
+//   transition: transform 250ms linear;
+// }
 
 .contacts-card:not(:last-child) {
   margin-bottom: 20px;
@@ -336,7 +341,7 @@
 
 .contacts-modal {
   position: relative;
-
+  z-index: 10;
   padding: 35px;
   max-width: 450px;
   width: 100%;
