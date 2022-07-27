@@ -112,7 +112,6 @@
 .products__item__card-back {
   background-image: linear-gradient(
     45deg,
-    var(--accent-color),
     var(--secondary-accent-color),
     var(--forth-bg-color),
     var(--third-bg-color),
@@ -162,20 +161,6 @@
 
 .products__item:last-child .products__item__card-back {
   background-color: var(--third-bg-color);
-}
-.products__text__card-back {
-  font-family: 'Titan One';
-  text-transform: uppercase;
-  @include font(null, 20px, 23px, 0.04em, center, var(--primare-bg-color));
-  margin-bottom: 30px;
-}
-
-.products__text__card-back {
-  display: block;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
 }
 
 .products__card {
@@ -343,7 +328,7 @@
   }
 }
 .products__box {
-  margin-top: 32px;
+  margin-top: 20px;
   gap: 4px;
   width: 100%;
   @include centeredFlex(flex, null, center);
@@ -374,26 +359,14 @@
 .products__text {
   font-family: 'DM Sans';
   align-content: flex-end;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   @include font(700, 14px, 21px, 0.04em, center, var(--primare-bg-color));
   @media screen and (min-width: 768px) {
     @include font(700, 14px, 25px, 0.04em, center, var(--primare-bg-color));
   }
   @media screen and (min-width: 1200px) {
     @include font(700, 16px, 28px, 0.04em, center, var(--primare-bg-color));
-    margin-bottom: 60px;
-  }
-}
-
-.products__holder {
-  text-align: center;
-  margin: 0 auto;
-  @include centeredFlex(flex, center, center);
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
   }
 }
 
@@ -439,18 +412,18 @@
   text-transform: uppercase;
   margin-top: 20px;
 
-  @include font(null, 14px, 17px, 0.04em, center, var(--accent-color));
+  @include font(null, 14px, 17px, 0.04em, center, var(--third-accent-color));
   @media screen and (min-width: 768px) {
     background-color: transparent;
     margin-top: 0px;
   }
   @media screen and (min-width: 1200px) {
-    @include font(null, 23px, 28px, 0.04em, center, var(--accent-color));
+    @include font(null, 23px, 28px, 0.04em, center, var(--third-accent-color));
   }
 }
 
 .products__box__card-back {
-  margin-top: 10px;
+  padding-top: 10px;
   gap: 4px;
   width: 100%;
   @include centeredFlex(flex, null, center);
@@ -460,29 +433,57 @@
   }
 }
 .products__icon__card-back {
-  fill: var(--accent-color);
+  fill: var(--third-accent-color);
   border-radius: 50%;
 }
 .products__text__card-back {
   font-family: 'DM Sans';
   align-content: flex-end;
-  margin-top: 10px;
-  margin-bottom: auto;
-  @include font(400, 14px, 21px, 0.04em, center, var(--accent-color));
+  padding-top: 10px;
+  padding-bottom: auto;
+  @include font(400, 14px, 21px, 0.04em, center, var(--third-accent-color));
   @media screen and (min-width: 768px) {
-    @include font(400, 14px, 25px, 0.04em, center, var(--accent-color));
+    @include font(400, 14px, 25px, 0.04em, center, var(--third-accent-color));
   }
   @media screen and (min-width: 1200px) {
-    @include font(400, 16px, 28px, 0.04em, center, var (--accent-color));
+    @include font(400, 16px, 28px, 0.04em, center, var (--third-accent-color));
+  }
+  display: block;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.products__holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
+  left: 120px;
+  @media screen and (min-width: 768px) {
+    left: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 60px;
+    left: 164px;
   }
 }
+
 .products__holder__card-back {
-  text-align: center;
-  margin: 0 auto;
-  @include centeredFlex(flex, center, center);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
+  left: 120px;
   @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 92px;
   }
   @media screen and (min-width: 1200px) {
+    bottom: 50px;
+    left: 164px;
   }
 }
 .products__pic__card-back {
@@ -494,4 +495,82 @@
   border-radius: 50%;
   border-radius: transparent;
   @include centeredFlex(flex, center, center);
+}
+.products__text__comment {
+  color: var(--accent-color);
+  border-bottom: 1px dashed var(--primare-bg-color);
+  position: relative;
+  cursor: pointer;
+}
+
+.products__text__comment::before {
+  content: attr(data-title);
+  width: 200px;
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-accent-color),
+    var(--forth-bg-color),
+    var(--third-bg-color),
+    var(--secondary-bg-color)
+  );
+  bottom: 50px;
+  margin-left: -100px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--third-accent-color);
+  border-radius: 5px;
+  font-family: 'DM Sans';
+  align-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--third-accent-color);
+  @include font(700, 14px, 21px, 0.04em, center, var(--third-accent-color));
+  @media screen and (min-width: 768px) {
+    @include font(700, 14px, 25px, 0.04em, center, var(--third-accent-color));
+    bottom: 60px;
+    width: 220px;
+    margin-left: -110px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(700, 16px, 28px, 0.04em, center, var(--third-accent-color));
+    bottom: 70px;
+    width: 260px;
+    margin-left: -130px;
+  }
+}
+
+.products__text__comment:hover::before,
+.products__text__comment:hover::after {
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 0;
+}
+
+.products__text__comment::before,
+.products__text__comment::after {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  margin-bottom: 15px;
+  transition-property: opasity 0.7s, margin-bottom 0.7s;
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.products__text__comment::after {
+  content: '';
+  border-top: 10px solid var(--third-accent-color);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 40px;
+  margin-left: -10px;
+  @media screen and (min-width: 768px) {
+    bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 60px;
+  }
 }
