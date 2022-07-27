@@ -88,7 +88,6 @@
   position: relative;
   margin-top: 140px;
   border-radius: 24px;
-  //filter: drop-shadow (10px 10px 20px black);
   @media screen and (min-width: 320px) {
     margin-top: 140px;
     with: 280px;
@@ -106,10 +105,6 @@
     margin-top: 261px;
   }
 }
-.products__item__card-front {
-  border-radius: 24px;
-  height: 100%;
-}
 
 .products__third,
 .products__third-back {
@@ -119,8 +114,7 @@
   height: 100%;
 }
 .products__third .products__pic {
-  box-shadow: rgba(143, 222, 36, 0.5) 15px 30px 60px -12px,
-    rgba(143, 222, 36, 0.5) 15px 18px 36px -18px inset;
+  box-shadow: rgba(143, 222, 36, 0.5) 15px 18px 36px -18px inset;
   border-radius: 50%;
 }
 .products__first,
@@ -132,8 +126,7 @@
 }
 
 .products__first .products__pic {
-  box-shadow: rgba(202, 74, 104, 0.5) 15px 30px 60px -12px,
-    rgba(202, 74, 104, 0.5) 15px 18px 36px -18px inset;
+  box-shadow: rgba(202, 74, 104, 0.5) 15px 18px 36px -18px inset;
   border-radius: 50%;
 }
 
@@ -146,8 +139,7 @@
 }
 
 .products__second .products__pic {
-  box-shadow: rgba(224, 136, 13, 0.5) 15px 30px 60px -12px,
-    rgba(224, 136, 13, 0.5) 15px 18px 36px -18px inset;
+  box-shadow: rgba(224, 136, 13, 0.5) 15px 18px 36px -18px inset;
   border-radius: 50%;
 }
 
@@ -159,29 +151,8 @@
     var(--third-bg-color),
     var(--secondary-bg-color)
   );
-  border-radius: 24px;
-  height: 100%;
 }
 
-.products__item__card-front {
-  padding: 140px 39px 40px 41px;
-  @media screen and (min-width: 768px) {
-    padding: 118px 20px 40px 20px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 165px 55px 60px 58px;
-  }
-}
-
-.products__item__card-back {
-  padding: 140px 39px 40px 41px;
-  @media screen and (min-width: 768px) {
-    padding: 118px 20px 40px 20px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 165px 55px 60px 58px;
-  }
-}
 .products__item:first-child .products__item__card-front {
   background-color: var(--secondary-accent-color);
 }
