@@ -44,7 +44,7 @@
   width: 100%;
   border-radius: 8px;
   border: transparent;
-  transition: scale(1) var(--time-duration) var(--timing-function);
+  transition: scale(1) 500ms var(--timing-function);
   @media screen and (min-width: $tablet-width) {
     border-radius: 20px;
   }
