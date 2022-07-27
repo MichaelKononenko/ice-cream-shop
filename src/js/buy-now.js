@@ -1,8 +1,6 @@
 (() => {
   const refs = {
-    // menu: document.querySelector('.mob-menu'),
     menuHide: document.querySelector('.mob-menu'),
-    //костыль ниже
     heroHide: document.querySelector('.hero'),
     reviewHide: document.querySelector('.customer-reviews'),
     buyNowButton: document.querySelector('.buy-now-button'),
