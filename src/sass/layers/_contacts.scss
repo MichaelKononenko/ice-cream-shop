@@ -548,6 +548,10 @@
   @media screen and (min-width: $tablet-width) {
     width: 750px;
   }
+  @media screen and (min-width: $desktop-width) {
+    height: 500px;
+    width: 1000px;
+  }
 }
 .ViewMap__Title-sc-1nid2o5-4 {
   color: #d41342;
