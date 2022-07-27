@@ -43,13 +43,11 @@
 .contacts-card {
   position: relative;
   background-color: var(--primare-bg-color);
-  // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
     inset -5px -5px 5px rgba(255, 255, 255, 0.5),
     5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
   min-height: 422px;
   border-radius: 24px;
-  // padding: 40px 32px;
 
   @media screen and (min-width: $tablet-width) {
     flex-basis: calc((100% - 64px) / 3);
@@ -57,7 +55,6 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    // padding: 40px;
     min-height: 558px;
   }
 
@@ -68,14 +65,6 @@
     }
   }
 }
-// plan b
-// .contacts-card:hover {
-//   transform: translateX(10px) translateY(-10px);
-//   transition: transform 250ms linear;
-// }
-
-// секция .contacts-card требует доработки.
-// Закомментированные свойства на всякий случай от старой версии карточки без ховера на ней и абсолютного позицонирования box внутри нее
 
 .contacts__box {
   position: absolute;
@@ -109,7 +98,7 @@
   line-height: 1.86;
 
   color: var(--primare-bg-color);
-  background: #f0d1a5;
+  background: var(--forth-bg-color);
   border-radius: 4px;
   height: 16px;
   min-width: 80px;
@@ -274,17 +263,8 @@
   height: 44px;
   background-color: #d41342;
   color: var(--primare-bg-color);
-  //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   через цю тінь не затосується загальна анімація для кнопок
   border-radius: 22px;
   border: none;
-
-  // transition: background-color var(--time-duration) var(--timing-function);
-
-  //прописані загальні стилі ховера і фокуса
-  // &:hover,
-  // &:focus {
-  //   background-color: var(--secondary-accent-color);
-  // }
 
   @media screen and (min-width: $tablet-width) {
     width: 192px;
@@ -298,15 +278,6 @@
 .contacts__button.contacts__button--white {
   background-color: var(--primare-bg-color);
   color: var(--accent-color);
-  //box-shadow: none;
-
-  // transition: background-color var(--time-duration) var(--timing-function);
-
-  //прописані загальні стилі ховера і фокуса
-  // &:hover,
-  // &:focus {
-  //   background-color: #ecebeb;
-  // }
 
   @media screen and (min-width: $tablet-width) {
     width: 174px;
@@ -343,7 +314,6 @@
   top: 0;
   width: 100%;
   height: 100%;
-  // background-color: rgba(216, 37, 112, 0.4);
   background-image: radial-gradient(
     var(--secondary-accent-color),
     rgba(0, 0, 0, 0.2),
@@ -521,13 +491,6 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
   border: none;
-  // transition: background-color var(--time-duration) var(--timing-function);
-
-  //прописані загальні стилі ховера і фокуса
-  // &:hover,
-  // &:focus {
-  //   background-color: var(--secondary-accent-color);
-  // }
 }
 
 .contacts-map {
@@ -535,16 +498,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // max-width: 900px;
-  // width: 250px;
   padding: 5px;
   z-index: 6;
   background-color: var(--primare-bg-color);
   border-radius: 10px;
 }
+
 .map-frame {
   width: 300px;
   height: 300px;
+  border: 0;
   @media screen and (min-width: $tablet-width) {
     width: 750px;
   }
