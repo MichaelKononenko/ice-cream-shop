@@ -24,7 +24,7 @@
     refs.closeLink.classList.toggle('is-hidden');
     refs.buyNowModal.classList.toggle('is-hidden');
     refs.header.classList.toggle('hide');
-    refs.body.classList.toggle('no-scroll');
+    refs.body.classList.toggle('no-scrolling');
   }
 })();
 
