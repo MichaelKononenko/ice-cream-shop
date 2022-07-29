@@ -2,6 +2,7 @@
   overflow: hidden;
 
   padding-top: 60px;
+  padding-bottom: 10px;
 
   background-image: linear-gradient(
     180deg,
@@ -29,8 +30,11 @@
     gap: 8px;
   }
 }
+.gallery__wrap {
+  
+}
 
-.gallery__item:not(:last-child) {
+.gallery__wrap:not(:last-child) .gallery__image {
   margin-bottom: 1.89px;
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 6.05px;
@@ -41,14 +45,16 @@
 }
 
 .gallery__image {
+  
   width: 100%;
   border-radius: 8px;
   border: transparent;
-  transition: scale(1) 500ms var(--timing-function);
+  transition: scale() 500ms var(--timing-function);
   @media screen and (min-width: $tablet-width) {
     border-radius: 20px;
   }
   &:hover {
+    pointer-events: all;
     transform: scale(1.2);
   }
 }
