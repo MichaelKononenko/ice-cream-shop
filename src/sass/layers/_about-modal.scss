@@ -243,10 +243,10 @@ body.about-modal--open {
 .timeline-text {
   @include font(400, 15px, 16px, normal, null, var(--primary-text-color));
 }
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: 767px) {
   .timeline::before,
   .timeline::after {
-    left: 20px;
+    left: 53px;
     transform: translateX(-49px);
   }
 
