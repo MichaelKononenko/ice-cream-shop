@@ -13,8 +13,8 @@
   padding-top: 63px;
   @media screen and (min-width: $tablet-width) {
     overflow: visible;
-    padding-top: 102px;
-    // height: 416px;
+    padding-top: 97px;
+    height: 416px;
   }
   @media screen and (min-width: $desktop-width) {
     overflow: visible;
@@ -25,9 +25,9 @@
   &--center {
     position: relative;
     z-index: 1;
-    margin-top: 136px;
+    // margin-top: 136px;
     @media screen and (min-width: $tablet-width) {
-      margin-top: 0;
+      // margin-top: 0;
       overflow: visible;
       display: flex;
       justify-content: space-between;
@@ -45,13 +45,13 @@
 
     color: var(--primare-bg-color);
     width: 218px;
-    height: 106px;
+    // height: 106px;
     margin-bottom: 20px;
     @media screen and (min-width: $tablet-width) {
       font-size: 22px;
       line-height: 1.13;
       width: 162px;
-      height: 80px;
+      // height: 80px;
     }
     @media screen and (min-width: $desktop-width) {
       font-size: 38px;
