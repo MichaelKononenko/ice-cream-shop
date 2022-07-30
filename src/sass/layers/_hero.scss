@@ -1,6 +1,6 @@
 .hero .container {
   @media screen and (min-width: $tablet-width) {
-    position: relative;
+    // position: relative;
     height: 100%;
   }
 }
@@ -13,12 +13,12 @@
   padding-top: 63px;
   @media screen and (min-width: $tablet-width) {
     overflow: visible;
-    padding-top: 92px;
-    height: 416px;
+    padding-top: 102px;
+    // height: 416px;
   }
   @media screen and (min-width: $desktop-width) {
     overflow: visible;
-    padding-top: 92px;
+    padding-top: 147px;
     height: 664px;
   }
 
@@ -161,13 +161,14 @@
       width: 335px;
       height: 333px;
       transform: translateX(65%);
-      top: -58px;
+      transform: translateX(0);
+      top: 43px;
     }
     @media screen and (min-width: $desktop-width) {
       width: 534px;
       height: 534px;
-      transform: translateX(88%);
-      top: -58px;
+      transform: translateX(100%);
+      top: 54px;
     }
   }
 
