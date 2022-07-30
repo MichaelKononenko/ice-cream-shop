@@ -2,6 +2,7 @@
   overflow: hidden;
 
   padding-top: 60px;
+  padding-bottom: 30px;
 
   background-image: linear-gradient(
     180deg,
@@ -39,18 +40,26 @@
     margin-bottom: 8px;
   }
 }
+.gallery__item:hover {
+  position: relative;
+  z-index: 10;
+}
+
 
 .gallery__image {
   width: 100%;
   border-radius: 8px;
   border: transparent;
-  transition: scale(1) 500ms var(--timing-function);
-  @media screen and (min-width: $tablet-width) {
-    border-radius: 20px;
-  }
+  
+  transition: transform 1s ease;
+
   &:hover {
-    transform: scale(1.2);
+    
+    transform: translate(0.001px) scale(1.4) ;
   }
+@media screen and (min-width: $tablet-width) {
+  border-radius: 20px;
+}
 }
 
 .box5 {
@@ -67,3 +76,11 @@
     margin-top: 43px;
   }
 }
+
+
+
+
+
+
+
+
