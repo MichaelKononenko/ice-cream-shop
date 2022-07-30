@@ -7,16 +7,12 @@
 
 .header__logo {
   position: relative;
-  padding-top: 8px;
+
   background: rgba(0, 0, 0, 0);
   @media screen and (min-width: $tablet-width) {
-    padding-top: 32px;
     display: flex;
     min-width: 78%;
     margin-right: 32px;
-  }
-  @media screen and (min-width: $desktop-width) {
-    padding-top: 37px;
   }
 }
 
@@ -27,7 +23,7 @@
 .menu-open-btn {
   display: block;
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 0px;
   padding: 10px;
   background-color: #ffb8ca;
@@ -38,7 +34,7 @@
   @media screen and (min-width: $tablet-width) {
     display: block;
     position: absolute;
-    top: 55px;
+    top: 25px;
     right: 0px;
     padding: 10px;
     background-color: #ffb8ca;
@@ -115,13 +111,14 @@
 .mob-menu .container {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 75%;
   height: 100%;
   padding: 60px 30px;
+  right: 0;
   background-color: #e17992;
   @media screen and (min-width: $tablet-width) {
-    width: 70%;
+    width: 50%;
     padding: 60px 60px;
   }
 }
@@ -192,14 +189,14 @@
     justify-content: center;
     color: var(--accent-color);
     border: none;
-    margin-top: 30px;
+    margin-top: 0px;
     padding: 0;
     width: 160px;
     height: 44px;
     border-radius: 22px;
   }
   @media screen and (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 0px;
     margin-left: auto;
   }
 }
