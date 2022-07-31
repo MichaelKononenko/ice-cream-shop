@@ -18,14 +18,28 @@
   refs.closeIcon.addEventListener('click', toggleMenu);
   function toggleMenu() {
     // refs.menu.classList.toggle('is-shown');
-    refs.heroHide.classList.toggle('hide');
-    refs.menuHide.classList.toggle('hide');
-    refs.reviewHide.classList.toggle('hide');
+    // refs.heroHide.classList.toggle('hide');
+    // refs.menuHide.classList.toggle('hide');
+    // refs.reviewHide.classList.toggle('hide');
     refs.closeLink.classList.toggle('is-hidden');
     refs.buyNowModal.classList.toggle('is-hidden');
-    refs.header.classList.toggle('hide');
+    // refs.header.classList.toggle('hide');
     refs.body.classList.toggle('no-scrolling');
   }
+
+  $(function () {
+    let header = $('.header');
+    let hero = $('.hero');
+    let heroHeight = hero.height();
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() < heroHeight) {
+        header.css({ background: 'transparent' });
+      } else {
+        header.css({ background: 'rgba(241, 154, 154, 0.3)' });
+      }
+    });
+  });
 })();
 
 let first = document.getElementById('firstCount');
