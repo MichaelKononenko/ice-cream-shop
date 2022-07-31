@@ -200,12 +200,12 @@
     justify-content: center;
     color: var(--accent-color);
     border: none;
-    padding: 14px 37px;
+    padding: 13px 37px;
     border-radius: 22px;
     margin-left: auto;
   }
-  @media screen and (min-width: $desktop-width) {
-  }
+  // @media screen and (min-width: $desktop-width) {
+  // }
 }
 
 .header__wrap {
