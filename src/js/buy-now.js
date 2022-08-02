@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    buyNowButton: document.querySelector('.buy-now-button'),
-    buyNowModal: document.querySelector('.buy-now'),
-    buyNowOne: document.querySelector('.buy-now-button-one'),
+    buyNowButton: document.querySelector('button[data-buy-now]'),
+    buyNowModal: document.querySelector('div[data-buy-now-modal]'),
+    buyNowOne: document.querySelector('button[data-buy-now-menu]'),
     closeLink: document.querySelector('.buy-now-close'),
     closeIcon: document.querySelector('.close-icon'),
     body: document.querySelector('body'),

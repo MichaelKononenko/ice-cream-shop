@@ -71,15 +71,12 @@
   transition: border var(--time-duration) var(--timing-function);
   &:hover,
   &:focus {
-    border: 1px solid rgba(137, 59, 209, 0.97);
+    border: 1px solid black;
+    color: black;
   }
 }
 .buy-now__icon-close {
-  fill: black;
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
+  fill: currentColor;
 }
 .buy-now__title {
   text-align: center;
