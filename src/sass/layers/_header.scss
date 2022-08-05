@@ -189,6 +189,11 @@
 // }
 // }
 
+.header__buscket-icon {
+  margin-left: auto;
+  margin-right: 20px;
+  fill: var(--accent-color);
+}
 .mob-menu-btn__tablet {
   display: none;
   @media screen and (min-width: $tablet-width) {
@@ -202,7 +207,7 @@
     border: none;
     padding: 13px 37px;
     border-radius: 22px;
-    margin-left: auto;
+    // margin-left: auto;
   }
   // @media screen and (min-width: $desktop-width) {
   // }
