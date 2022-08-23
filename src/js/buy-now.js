@@ -1,20 +1,38 @@
 (() => {
   const refs = {
-    buyNowButton: document.querySelector('button[data-buy-now]'),
+    mobileButton: document.querySelector('button[data-buy-now]'),
     buyNowModal: document.querySelector('div[data-buy-now-modal]'),
-    buyNowOne: document.querySelector('button[data-buy-now-menu]'),
+    headerButton: document.querySelector('button[data-buy-now-menu]'),
     closeLink: document.querySelector('.buy-now-close'),
     closeIcon: document.querySelector('.close-icon'),
     body: document.querySelector('body'),
+    menu: document.querySelector('.mob-menu'),
   };
-  refs.buyNowOne.addEventListener('click', toggleMenu);
-  refs.buyNowButton.addEventListener('click', toggleMenu);
-  refs.closeLink.addEventListener('click', toggleMenu);
-  refs.closeIcon.addEventListener('click', toggleMenu);
-  function toggleMenu() {
-    refs.closeLink.classList.toggle('is-hidden');
-    refs.buyNowModal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scrolling');
+
+  refs.headerButton.addEventListener('click', headerShop);
+  function headerShop() {
+    refs.closeLink.classList.remove('is-hidden');
+    refs.buyNowModal.classList.remove('is-hidden');
+    refs.body.classList.add('no-scroll');
+  }
+
+  refs.closeLink.addEventListener('click', closeShop);
+  refs.closeIcon.addEventListener('click', closeShop);
+
+  refs.mobileButton.addEventListener('click', mobileShop);
+  function mobileShop() {
+    refs.closeLink.classList.remove('is-hidden');
+    refs.buyNowModal.classList.remove('is-hidden');
+  }
+
+  refs.closeLink.addEventListener('click', closeShop);
+  refs.closeIcon.addEventListener('click', closeShop);
+  function closeShop() {
+    refs.closeLink.classList.add('is-hidden');
+    refs.buyNowModal.classList.add('is-hidden');
+    refs.menu.classList.contains('is-shown')
+      ? null
+      : refs.body.classList.remove('no-scroll');
   }
 
   $(function () {
