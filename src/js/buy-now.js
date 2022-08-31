@@ -50,30 +50,37 @@
   });
 })();
 
-let first = document.getElementById('firstCount');
-let second = document.getElementById('secondCount');
-let third = document.getElementById('thirdCount');
-document.getElementById('plusFirst').onclick = function () {
-  let count = first.innerHTML;
-  count < 100 ? first.innerHTML++ : 0;
+const shoppingCart = {
+  iceCream: document.getElementById('firstCount'),
+  iceCofee: document.getElementById('secondCount'),
+  milkShake: document.getElementById('thirdCount'),
+  addDessert(dessert) {
+    this[dessert].innerHTML++;
+    console.log(`${dessert} was added`);
+  },
+  removeDessert(dessert) {
+    this[dessert].innerHTML > 0
+      ? this[dessert].innerHTML--
+      : (this[dessert].innerHTML = 0);
+    console.log(`${dessert} was removed`);
+  },
 };
-document.getElementById('plusSecond').onclick = function () {
-  let count = second.innerHTML;
-  count < 100 ? second.innerHTML++ : 0;
+
+document.getElementById('plusFirst').onclick = () => {
+  shoppingCart.addDessert('iceCream');
 };
-document.getElementById('plusThird').onclick = function () {
-  let count = third.innerHTML;
-  count < 100 ? third.innerHTML++ : 0;
-};
-document.getElementById('minusFirst').onclick = function () {
-  let count = first.innerHTML;
-  count > 0 ? first.innerHTML-- : 0;
-};
-document.getElementById('minusSecond').onclick = function () {
-  let count = second.innerHTML;
-  count > 0 ? second.innerHTML-- : 0;
-};
-document.getElementById('minusThird').onclick = function () {
-  let count = third.innerHTML;
-  count > 0 ? third.innerHTML-- : 0;
-};
+
+document.getElementById('plusSecond').onclick = () =>
+  shoppingCart.addDessert('iceCofee');
+
+document.getElementById('plusThird').onclick = () =>
+  shoppingCart.addDessert('milkShake');
+
+document.getElementById('minusFirst').onclick = () =>
+  shoppingCart.removeDessert('iceCream');
+
+document.getElementById('minusSecond').onclick = () =>
+  shoppingCart.removeDessert('iceCofee');
+
+document.getElementById('minusThird').onclick = () =>
+  shoppingCart.removeDessert('milkShake');
