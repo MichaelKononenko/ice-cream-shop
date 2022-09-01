@@ -50,37 +50,68 @@
   });
 })();
 
-const shoppingCart = {
-  iceCream: document.getElementById('firstCount'),
-  iceCofee: document.getElementById('secondCount'),
-  milkShake: document.getElementById('thirdCount'),
-  addDessert(dessert) {
-    this[dessert].innerHTML++;
-    console.log(`${dessert} was added`);
-  },
-  removeDessert(dessert) {
-    this[dessert].innerHTML > 0
-      ? this[dessert].innerHTML--
-      : (this[dessert].innerHTML = 0);
-    console.log(`${dessert} was removed`);
-  },
+class Shop {
+  constructor({ name, price, amount } = {}) {
+    this.name = name;
+    this.price = price;
+    this.amount = amount;
+    this.quantity = 0;
+  }
+
+  addToCart() {
+    this.amount -= 1;
+    this.quantity += 1;
+    cart.totalQuantity += 1;
+    cart.totalPrice += this.price;
+
+    if (!cart.items.includes(this.name)) {
+      cart.items.push(this.name);
+    }
+
+    this.updateUIQuantity();
+    console.log(cart);
+  }
+  removeFromCart() {
+    this.amount += 1;
+    this.quantity -= 1;
+    cart.totalQuantity -= 1;
+    cart.totalPrice -= this.price;
+
+    if (this.quantity < 1) {
+      const index = cart.items.indexOf(this.name);
+      cart.items.splice(index, 1);
+    }
+
+    this.updateUIQuantity();
+    console.log(cart);
+  }
+
+  updateUIQuantity() {
+    document.getElementById(this.name).innerHTML = this.quantity;
+  }
+}
+
+const cart = {
+  items: [],
+  totalQuantity: 0,
+  totalPrice: 0,
 };
+
+const iceCream = new Shop({ name: 'iceCream', price: 1, amount: 100 });
+const iceCoffee = new Shop({ name: 'iceCoffee', price: 2, amount: 100 });
+const milkShake = new Shop({ name: 'milkShake', price: 3, amount: 100 });
 
 document.getElementById('plusFirst').onclick = () => {
-  shoppingCart.addDessert('iceCream');
+  iceCream.addToCart();
 };
+document.getElementById('minusFirst').onclick = () => iceCream.removeFromCart();
 
-document.getElementById('plusSecond').onclick = () =>
-  shoppingCart.addDessert('iceCofee');
-
-document.getElementById('plusThird').onclick = () =>
-  shoppingCart.addDessert('milkShake');
-
-document.getElementById('minusFirst').onclick = () =>
-  shoppingCart.removeDessert('iceCream');
+document.getElementById('plusSecond').onclick = () => iceCoffee.addToCart();
 
 document.getElementById('minusSecond').onclick = () =>
-  shoppingCart.removeDessert('iceCofee');
+  iceCoffee.removeFromCart();
+
+document.getElementById('plusThird').onclick = () => milkShake.addToCart();
 
 document.getElementById('minusThird').onclick = () =>
-  shoppingCart.removeDessert('milkShake');
+  milkShake.removeFromCart();
