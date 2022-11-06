@@ -34,6 +34,7 @@
       <include src="./partials/contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
+    <include src="./partials/google-maps.html"></include>
     <!-- modals -->
     <include src="./partials/about-modal.html"></include>
     <include src="./partials/buy-now-modal.html"></include>
@@ -56,5 +57,10 @@
     <script type="module" src="./js/map-modal.js"></script>
     <script type="module" src="./js/videotube.js"></script>
     <!-- <script type="module" src="./js/cart.js"></script> -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV9ZltT8Od9WPAWgmEjOXG512exF8w9RY&libraries=places&callback=initMap"
+    ></script>
+    <script src="./js/google-maps.js"></script>
   </body>
 </html>

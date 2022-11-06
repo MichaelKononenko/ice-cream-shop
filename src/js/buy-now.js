@@ -7,7 +7,14 @@
     closeIcon: document.querySelector('.close-icon'),
     body: document.querySelector('body'),
     menu: document.querySelector('.mob-menu'),
+    cartButton: document.querySelector('buy-now__cart'),
+    quantity: document.querySelector('quantity'),
   };
+
+  function disableLink() {
+    cartButton.onclick.preventDefault();
+    quantity.onclick.preventDefault();
+  }
 
   refs.headerButton.addEventListener('click', headerShop);
   function headerShop() {
